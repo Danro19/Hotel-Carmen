@@ -51,3 +51,18 @@ body{
 .carousel-nav.right {
     right: 0.5rem;
 }
+
+.navegacion{
+    
+    margin-left: 10vw;
+}
+
+.introduccion{
+    margin-top: 4vh;
+}
+
+.uno, .dos, .tres{
+    border: 2px solid black;
+    width: 20vw;
+    height: 20vh;
+}

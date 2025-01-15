@@ -1,0 +1,42 @@
+# Requerimientos
+
+1.  Sitio web amable con el usuario
+
+2.  Principalmente usado en móvil, debe ser facil de hacer las busquedas de disponibilidad y la seleccion de opciones.
+
+3.  Minimo de tres páginas principales
+
+    + Inicio: landing page, vistazo principal de las instalaciones del hotel
+    + Reservar y consulta: consultar disponibilidad y gestionar las reservar 
+    + Contacto: Se debe mostrar de la manera mas clara donde estan ubicados con una dirección y los diversos metodos de comunicarse
+
+4.  Boton de comunicacion "WhastApp" (Debe ser funcional y abrir un enlace de whatsApp)
+
+5.  Poder permitir filtrar con diversos datos tales como: 
+    + Fecha y disponibilidad
+    + La cantidad de personas que se van a alojar y el tipo de habitaciones.
+    + Detalles de la habitacion (Internet, minibar, jacuzzi, desayuno incluido)
+    + Tipo de habitaciones (una cama sencilla, Cama doble, dos camas sencillaz, 1 camarote y una cama doble, 2 camarotes, 2 camas sencillas y una cama doble)
+
+    Justificacion clara de los precios y permitir adicionales.
+
+6.  Permitir el registro de usuarios con el fin de hacer reservas y cancelaciones.
+
+7.  Notificar al usuario de manera clara y concisa las politicas del hotel con el check in. (es una alerta).
+
+8.  El sistema debe verificar la existencia de la disponibilidad del cuarto y notificarle al usuario la disponibilidad de ese cuarto.
+
+9. Lo usuarios despues de registrado podrán hacer reserva o cancelar una reserva por el sistema, la cancelacion debe ser fácil y ágil. 
+
+10. Debe ser responsive para diferentes dispositivos.
+
+11. debe ser desplegada en GitHub Page
+
+12. Se permite agregar funcionalidades que enriquezcan y no conflictuen el sistema.
+
+
+# Tareas
+
+
+
+

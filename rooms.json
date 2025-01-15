@@ -1,0 +1,539 @@
+{
+  "camaSencilla": [
+    {
+      "id": 1,
+      "room": "201",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":120000
+    },
+    {
+      "id": 2,
+      "room": "202",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":120000
+    },
+    {
+      "id": 3,
+      "room": "203",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":120000
+    },
+    {
+      "id": 4,
+      "room": "204",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":120000
+    },
+    {
+      "id": 5,
+      "room": "205",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":120000
+    },
+    {
+      "id": 6,
+      "room": "206",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":120000
+    },
+    {
+      "id": 7,
+      "room": "1201",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":180000
+    },
+    {
+      "id": 8,
+      "room": "1202",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":180000
+    },
+    {
+      "id": 9,
+      "room": "1203",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":180000
+    },
+    {
+      "id": 10,
+      "room": "1204",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":180000
+    },
+    {
+      "id": 11,
+      "room": "1205",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":180000
+    },
+    {
+      "id": 12,
+      "room": "1206",
+      "cantPersonas": 1,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":180000
+    }
+  ],
+  "camaDoble": [
+    {
+      "id": 1,
+      "room":"301",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":220000
+    },
+    {
+      "id": 2,
+      "room":"302",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":220000
+    },
+    {
+      "id": 3,
+      "room":"303",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":220000
+    },
+    {
+      "id": 4,
+      "room":"304",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":220000
+    },
+    {
+      "id": 5,
+      "room":"305",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":220000
+    },
+    {
+      "id": 6,
+      "room":"306",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva":true,
+      "tipoRoom":"basico",
+      "precio":220000
+    },
+    {
+      "id": 7,
+      "room":"1301",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":400000
+    },
+    {
+      "id": 8,
+      "room":"1302",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":400000
+    },
+    {
+      "id": 9,
+      "room":"1303",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":400000
+    },
+    {
+      "id": 10,
+      "room":"1304",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":400000
+    },
+    {
+      "id": 11,
+      "room":"1305",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":400000
+    },
+    {
+      "id": 12,
+      "room":"1306",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva":true,
+      "tipoRoom":"delux",
+      "precio":400000
+    }
+  ],
+  "dobleCamaSencilla":[
+    {
+      "id": 1,
+      "room": "401",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 200000
+    },
+    {
+      "id": 2,
+      "room": "402",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 200000
+    },
+    {
+      "id": 3,
+      "room": "403",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 200000
+    },
+    {
+      "id": 4,
+      "room": "404",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 200000
+    },
+    {
+      "id": 5,
+      "room": "405",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 200000
+    },
+    {
+      "id": 6,
+      "room": "406",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 200000
+    },
+    {
+      "id": 7,
+      "room": "1101",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 380000
+    },
+    {
+      "id": 8,
+      "room": "1102",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 380000
+    },
+    {
+      "id": 9,
+      "room": "1103",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 380000
+    },
+    {
+      "id": 10,
+      "room": "1104",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 380000
+    },
+    {
+      "id": 11,
+      "room": "1105",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 380000
+    },
+    {
+      "id": 12,
+      "room": "1106",
+      "cantPersonas": 2,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 380000
+    }
+  ],
+  "camaroteCamaDoble":[
+    {
+      "id": 1,
+      "room": "501",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 310000
+    },
+    {
+      "id": 2,
+      "room": "502",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 310000
+    },
+    {
+      "id": 3,
+      "room": "503",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 310000
+    },
+    {
+      "id": 4,
+      "room": "204",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 310000
+    },
+    {
+      "id": 5,
+      "room": "505",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 310000
+    },
+    {
+      "id": 6,
+      "room": "506",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": false,
+      "jacuzzi": false,
+      "reserva": true,
+      "tipoRoom":"basico",
+      "precio": 310000
+    },
+    {
+      "id": 7,
+      "room": "1001",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 450000
+    },
+    {
+      "id": 8,
+      "room": "1002",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 450000
+    },
+    {
+      "id": 9,
+      "room": "1003",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 450000
+    },
+    {
+      "id": 10,
+      "room": "1004",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 450000
+    },
+    {
+      "id": 11,
+      "room": "1005",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 450000
+    },
+    {
+      "id": 12,
+      "room": "1006",
+      "cantPersonas": 3,
+      "internet": true,
+      "minibar": true,
+      "jacuzzi": true,
+      "reserva": true,
+      "tipoRoom":"delux",
+      "precio": 450000
+    }
+
+  ]
+}

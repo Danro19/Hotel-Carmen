@@ -16,7 +16,26 @@
     + Fecha y disponibilidad
     + La cantidad de personas que se van a alojar y el tipo de habitaciones.
     + Detalles de la habitacion (Internet, minibar, jacuzzi)
-    + Tipo de habitaciones (una cama sencilla, Cama doble, dos camas sencillaz, 1 camarote y una cama doble, 2 camarotes, 2 camas sencillas y una cama doble, camarote y cama sencilla)
+    + Tipo de habitaciones (una cama sencilla, Cama doble, dos camas sencillaz, 1 camarote y una cama doble, 2 camarotes, 2 camas sencillas y una cama doble, camarote y cama sencilla) los nombres elegidos son : 
+        + Cama Sencilla:
+            + Básica: "Sencilla Clásica"
+            + Deluxe: "Single Deluxe"
+        + Cama Doble:
+            + Básica: "Doble Clásica"
+            + Deluxe: "Double Prestige"
+        + Dos Camas Sencillas:
+            + Básica: "Twin Clásica"
+            + Deluxe: "Twin Elegance"
+        + 1 Camarote y 1 Cama Doble:
+            + Básica: "Familiar Clásica"
+            + Deluxe: "Familiar Premium"
+        + 2 Camarotes:
+            + Básica: "Camarote Clásico"
+            + Deluxe: "Camarote Exclusivo"
+        + 2 Camas Sencillas y 1 Cama Doble:
+            + Básica: "Suite Familiar"
+            + Deluxe: "Suite Familiar Deluxe"
+    
 
     Justificacion clara de los precios y permitir adicionales.
 

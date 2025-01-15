@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel El Rincón de Carmen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        
+    </style>
+</head>
+<body class="" id>
+    <header class="flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200">
+        
+        <div class="flex flex-col gap-2">
+            <button class="bg-gray-800 text-white py-1 px-4 rounded hover:bg-gray-700">Iniciar Sesión</button>
+            <button class="bg-gray-100 text-gray-800 py-1 px-4 rounded hover:bg-gray-200">Registrarse</button>
+        </div>
+       
+        <nav>
+            <ul class="flex gap-8 font-semibold">
+                <li><a href="index.html" class="hover:text-gray-100">Inicio</a></li>
+                <li><a href="/page/habitaciones.html" class="hover:text-gray-100">habitaciones</a></li>
+                <li><a href="/page/contacto.html" class="hover:text-gray-100">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex items-center ">
+            <div class="title">
+            <h1 class="text-gold font-bold text-lg">Hotel El Rincón de <br>Carmen</h1>
+            </div>
+            <img
+                src="img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.png"
+                alt="Logo"
+                
+            />
+        </div>
+    </header>
+    <div class="relative w-full max-w-4xl mx-auto">
+                <button class="carousel-nav left">&#8249;</button>
+                <button class="carousel-nav right">&#8250;</button>
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwaG90ZWx8ZW58MHx8MHx8fDA%3D" alt="Hotel Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://estaticos-cdn.prensaiberica.es/clip/85ca7cd9-37e5-404e-8be9-c78b4856fb15_16-9-discover-aspect-ratio_default_0.jpg" alt="Hotel Comida 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.hotellasrocasresort.com/wp-content/uploads/2023/04/Zonas-Humedas-61-scaled.jpg" alt="Hotel ZH 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1663659507002-304e741e9912?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hotel Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://shangrilajz.com/wp-content/uploads/2024/02/comida_lujo.jpg" alt="Hotel Comida 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://elle.clarin.com/2022/01/26/2I4gsu0wV_1600x805__1.jpg" alt="Hotel Spa 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1723119832675-0031e0f0408c?q=80&w=2573&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hotel Imagen 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://webbox.imgix.net/images/rpfwzcgyrdzictvy/da9da7d7-246f-4400-bf13-07d79bb948ad.png?auto=format,compress&fit=crop&crop=entropy" alt="Hotel ZH 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1723465308831-29da05e011f3?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hotel Imagen 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.peru.travel/Contenido/General/Imagen/es/740/1.1/qoya-spa.jpg" alt="Hotel Spa 2">
+                    </div>
+                </div>
+            </div>
+    
+</body>
+<script>
+        const carouselContainer = document.querySelector('.carousel-container');
+        const leftButton = document.querySelector('.carousel-nav.left');
+        const rightButton = document.querySelector('.carousel-nav.right');
+        const items = document.querySelectorAll('.carousel-item');
+        const itemWidth = carouselContainer.offsetWidth;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            carouselContainer.scrollTo({ left: currentIndex * itemWidth, behavior: 'smooth' });
+        }
+
+        leftButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            updateCarousel();
+        });
+
+        rightButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateCarousel();
+        });
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateCarousel();
+        }, 5000);
+    </script>
+</html>

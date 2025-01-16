@@ -1189,6 +1189,24 @@
       "password": "123",
       "confirm_password": "123",
       "id": 2
+    },
+    {
+      "name": "Hely Saniago",
+      "email": "helydiaz65@gmail.com",
+      "phone": "3187471767",
+      "fechaNacimiento": "2000-10-28",
+      "password": "123456789H",
+      "confirm_password": "123456789H",
+      "id": 3
+    },
+    {
+      "name": "Juanes",
+      "email": "Juanialimanana@gmail.com",
+      "phone": "3122564879",
+      "fechaNacimiento": "2007-01-04",
+      "password": "123",
+      "confirm_password": "123",
+      "id": 4
     }
   ],
   "reservas": []

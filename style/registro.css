@@ -18,3 +18,9 @@ h1,h2,h3 {
     text-shadow: 0 4px 10px rgba(226, 153, 43, 0.25);
 
 }
+
+.bg-white{
+    max-height: 200px;
+    overflow: auto;
+}
+

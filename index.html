@@ -4,33 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel El Rincón de Carmen</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style/index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style></style>
+    
   </head>
-  <body class="" id>
+  <body>
     <header
-      class="flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200"
+      class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50"
     >
-      <div class="login flex flex-col gap-2">
+      <!-- Menú de registro (SVG de usuario) -->
+      <div class="mobile-login md:hidden relative">
         <button
-          class="bg-gray-800 text-white py-1 px-4 rounded hover:bg-gray-700"
+          id="login-toggle"
+          class="text-gray-200 focus:outline-none text-2xl"
         >
-          Iniciar Sesión
+          <!-- SVG de usuario -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="black"
+            class="w-6 h-6"
+          >
+            <path
+              d="M12 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM4 20c0-3.308 2.692-6 6-6h4c3.308 0 6 2.692 6 6 0 1.104-.896 2-2 2H6c-1.104 0-2-.896-2-2zm2 0h12c0-2.206-1.794-4-4-4h-4c-2.206 0-4 1.794-4 4z"
+            />
+          </svg>
         </button>
-        <button
-          class="bg-gray-100 text-gray-800 py-1 px-4 rounded hover:bg-gray-200"
+        <div
+          id="login-content"
+          class="hidden absolute top-12 left-0 flex flex-col gap-2 bg-teal-800 p-4 rounded-md shadow-lg"
         >
-          Registrarse
-        </button>
+          <button class="login-btn">Iniciar Sesión</button>
+          <button class="login-btn" id="register-movile">Registrarse</button>
+        </div>
       </div>
 
-      <div class="navegacion">
-        <ul class="flex gap-8 font-semibold">
+      <!-- Menú de navegación (☰) -->
+      <div class="mobile-menu md:hidden relative">
+        <button
+          id="menu-toggle"
+          class="text-gray-200 focus:outline-none text-2xl"
+        >
+          ☰
+        </button>
+        <div
+          id="menu-content"
+          class="hidden absolute top-12 left-0 flex flex-col gap-4 bg-teal-800 p-4 rounded-md shadow-lg"
+        >
+          <ul class="menu-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="/page/habitaciones.html">Habitaciones</a></li>
+            <li><a href="/page/contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Menú de registro y navegación para escritorio -->
+      <div class="hidden md:flex flex-col gap-2 login">
+        <button class="login-btn">Iniciar Sesión</button>
+        <button class="login-btn" id="register-desktop">Registrarse</button>
+      </div>
+      <div class="navegacion hidden md:flex">
+        <ul class="flex gap-8 font-semibold menu-list">
           <li><a href="index.html" class="hover:text-gray-100">Inicio</a></li>
           <li>
             <a href="/page/habitaciones.html" class="hover:text-gray-100"
-              >habitaciones</a
+              >Habitaciones</a
             >
           </li>
           <li>
@@ -41,78 +80,81 @@
         </ul>
       </div>
 
+      <!-- Título y logo -->
       <div class="flex items-center">
-        <div class="title">
+        <div class="title flex">
           <h1 class="text-gold font-bold text-lg">
             Hotel El Rincón de <br />Carmen
           </h1>
+          <img
+            src="img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.svg"
+            alt="Logo"
+            class="w-20 h-18"
+          />
         </div>
-        <img
-          src="img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.png"
-          alt="Logo"
-        />
       </div>
     </header>
+
     <!-- carrucel -->
     <div class="relative w-full max-w-4xl mx-auto">
       <button class="carousel-nav left" id="zeroLeft">&#8249;</button>
       <button class="carousel-nav right" id="zeroRight">&#8250;</button>
-      <div class="carousel-container">
-        <div class="carousel-item ">
+      <div class="carousel-container conteinerUno">
+        <div class="carousel-item">
           <img
             src="https://mediaim.expedia.com/destination/1/2d925b68edff8855928174337ec11a1b.jpg"
             alt="Hotel Imagen 1"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://images.huffingtonpost.com/2013-02-26-lizardislandsunsetofbalcony_1.jpg"
             alt="Hotel Comida 1"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://revistatraveling.com/wp-content/uploads/2017/09/03-IMG_2132-v3.jpg"
             alt="Hotel ZH 2"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://okdiario.com/coolthelifestyle/img/2024/06/17/ows-inside.jpg"
             alt="Hotel Imagen 2"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://lh3.googleusercontent.com/5iBwoWYcUQfWL5j6X3Bq_7UvPgfyBJChEDiRUU3hGkojBSFofz84I9zCsCkTINurZdZ0mRq8neuKAvvKVC33CjY2olwqPNw=s800"
             alt="Hotel imagen 2"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://www.mueblesdiversos.com/wp-content/uploads/2023/02/CAMAROTE-TRON-2.png"
             alt="camarote"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://tourtravelandmore.com/wp-content/uploads/2022/06/image-2.png"
             alt="Hotel Imagen 3"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://webbox.imgix.net/images/rpfwzcgyrdzictvy/da9da7d7-246f-4400-bf13-07d79bb948ad.png?auto=format,compress&fit=crop&crop=entropy"
             alt="Hotel ZH 1"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://forbes.es/wp-content/uploads/2022/03/Cabana-Pool-Daybeds-1.jpg"
             alt="Hotel Imagen 4"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             src="https://www.semana.com/resizer/v2/GSZRVIKJIFDBLD74HBKRWXGIWI.jpg?auth=889d86a8599d9bb51e2677f171830c58b6485f3ed035faca3f9c4dd9571f9cfe&smart=true&quality=75&width=1280&height=720"
             alt="Hotel Spa 2"
@@ -136,6 +178,12 @@
         serenidad que solo un destino exclusivo como este puede ofrecer.
       </p>
     </div>
+    <div
+      class="relative w-full max-w-4xl mx-auto flex items-center justify-center botonReserva"
+    >
+      <button>Reserva Ya!</button>
+    </div>
+
     <div class="introduccion relative w-full max-w-4xl mx-auto">
       <p>
         <strong>Lujo sin límites:</strong><br />
@@ -149,11 +197,18 @@
         disfrutes del máximo confort y atención.
       </p>
     </div>
-    <div class="introduccion relative w-full max-w-4xl mx-auto flex  justify-between items-center flex-col ">
-        <!-- MiniCarruseles-->
-    <div class="tres items-center justify-center" > <h1>SPA Y ZONAS HUMEDAS </h1></div>
+
+    <div
+      class="introduccion relative w-full max-w-4xl mx-auto flex justify-between items-center flex-col"
+    >
+      <!-- MiniCarruseles-->
+      <div class="tres items-center justify-center">
+        <h1><strong>SPA Y ZONAS HUMEDAS</strong></h1>
+      </div>
       <div class="uno">
-        <div class="relative w-full max-w-4xl mx-auto flex justify-center items-center">
+        <div
+          class="relative w-full max-w-4xl mx-auto flex justify-center items-center"
+        >
           <button class="carousel-nav leftUno" id="left">&#8249;</button>
           <button class="carousel-nav rightUno" id="right">&#8250;</button>
           <div class="carousel-container" id="carousel-container">
@@ -220,10 +275,14 @@
           </div>
         </div>
       </div>
-      
-      <div class="tres items-center justify-center"> <h1>COMIDA GOURMET</h1></div>
+
+      <div class="tres items-center justify-center">
+        <h1><strong>COMIDA GOURMET</strong></h1>
+      </div>
       <div class="dos">
-        <div class="relative w-full max-w-4xl mx-auto flex items-center justify-center">
+        <div
+          class="relative w-full max-w-4xl mx-auto flex items-center justify-center"
+        >
           <button class="carousel-nav left" id="leftDos">&#8249;</button>
           <button class="carousel-nav right" id="rightDos">&#8250;</button>
           <div class="carousel-container" id="carousel-containerDos">
@@ -290,7 +349,30 @@
           </div>
         </div>
       </div>
-      
+    </div>
+    <div class="introduccion relative w-full max-w-4xl mx-auto">
+      <p>
+        <strong
+          >Aquí, la aventura y el lujo se combinan en un entorno natural único,
+          ofreciendo una experiencia de descanso y emoción sin igual.</strong
+        >
+        <br />
+        Más allá del lujo y la exclusividad, nuestra ubicación en las Islas del
+        Rosario te invita a vivir la aventura en su máxima expresión. Explora
+        los arrecifes de coral mediante snorkel o buceo, navega en yates
+        privados a islas vírgenes, disfruta de deportes acuáticos de alta gama o
+        relájate en excursiones en kayak. Descubre el Parque Nacional Natural
+        Corales del Rosario, un paraíso ecológico lleno de biodiversidad.
+      </p>
+    </div>
+
+    <div
+      class="introduccion relative w-full max-w-4xl mx-auto flex justify-center aventura"
+    >
+      <img
+        src="https://oceanario.co/wp-content/uploads/2022/12/subancla01-1024x561.jpg"
+        alt="delfines"
+      />
     </div>
 
     <!-- boton whatsApp-->
@@ -311,9 +393,24 @@
         ></path>
       </svg>
     </a>
+    <footer class="bg-teal-900 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <!-- Información de la empresa -->
+          <div class="mt-6 md:mt-0 text-center md:text-left">
+            <a href="/page/privacidad.html" class="text-lg hover:text-gray-300"
+              >Política de privacidad</a
+            >
+            <p>
+              &copy; 2025 Hotel El Rincón de Carmen. Todos los derechos
+              reservados.
+            </p>
+            <p>Desarrollado por Resolutio Developers</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
-  <script src="script.js">
-
-  </script>
+  <script src="scripts/index.js"></script>
 </html>

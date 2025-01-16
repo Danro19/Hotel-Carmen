@@ -9,91 +9,84 @@
     
   </head>
   <body>
-    <header
-      class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50"
-    >
-      <!-- Menú de registro (SVG de usuario) -->
-      <div class="mobile-login md:hidden relative">
-        <button
-          id="login-toggle"
-          class="text-gray-200 focus:outline-none text-2xl"
-        >
-          <!-- SVG de usuario -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="black"
-            class="w-6 h-6"
-          >
-            <path
-              d="M12 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM4 20c0-3.308 2.692-6 6-6h4c3.308 0 6 2.692 6 6 0 1.104-.896 2-2 2H6c-1.104 0-2-.896-2-2zm2 0h12c0-2.206-1.794-4-4-4h-4c-2.206 0-4 1.794-4 4z"
-            />
-          </svg>
-        </button>
-        <div
-          id="login-content"
-          class="hidden absolute top-12 left-0 flex flex-col gap-2 bg-teal-800 p-4 rounded-md shadow-lg"
-        >
-          <button class="login-btn">Iniciar Sesión</button>
-          <button class="login-btn" id="register-movile">Registrarse</button>
-        </div>
-      </div>
+ <header class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50">
+  <!-- Menú de registro (SVG de usuario) -->
+  <div class="mobile-login md:hidden relative">
+    <button id="login-toggle" class="text-gray-200 focus:outline-none text-2xl">
+      <!-- SVG de usuario -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-6 h-6">
+        <path d="M12 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM4 20c0-3.308 2.692-6 6-6h4c3.308 0 6 2.692 6 6 0 1.104-.896 2-2 2H6c-1.104 0-2-.896-2-2zm2 0h12c0-2.206-1.794-4-4-4h-4c-2.206 0-4 1.794-4 4z"/>
+      </svg>
+    </button>
+    <div id="login-content" class="hidden absolute top-12 left-0 flex flex-col gap-2 bg-teal-800 p-4 rounded-md shadow-lg">
+      <button id="open-login-modal" class="login-btn">Iniciar Sesión</button>
+      <button class="login-btn" id="register-movile">Registrarse</button>
+    </div>
+  </div>
 
-      <!-- Menú de navegación (☰) -->
-      <div class="mobile-menu md:hidden relative">
-        <button
-          id="menu-toggle"
-          class="text-gray-200 focus:outline-none text-2xl"
-        >
-          ☰
-        </button>
-        <div
-          id="menu-content"
-          class="hidden absolute top-12 left-0 flex flex-col gap-4 bg-teal-800 p-4 rounded-md shadow-lg"
-        >
-          <ul class="menu-list">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="/page/habitaciones.html">Habitaciones</a></li>
-            <li><a href="/page/contacto.html">Contáctanos</a></li>
-          </ul>
-        </div>
-      </div>
+  <!-- Menú de navegación (☰) -->
+  <div class="mobile-menu md:hidden relative">
+    <button id="menu-toggle" class="text-gray-200 focus:outline-none text-2xl">☰</button>
+    <div id="menu-content" class="hidden absolute top-12 left-0 flex flex-col gap-4 bg-teal-800 p-4 rounded-md shadow-lg">
+      <ul class="menu-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="/page/habitaciones.html">Habitaciones</a></li>
+        <li><a href="/page/contacto.html">Contáctanos</a></li>
+      </ul>
+    </div>
+  </div>
 
-      <!-- Menú de registro y navegación para escritorio -->
-      <div class="hidden md:flex flex-col gap-2 login">
-        <button class="login-btn">Iniciar Sesión</button>
-        <button class="login-btn" id="register-desktop">Registrarse</button>
-      </div>
-      <div class="navegacion hidden md:flex">
-        <ul class="flex gap-8 font-semibold menu-list">
-          <li><a href="index.html" class="hover:text-gray-100">Inicio</a></li>
-          <li>
-            <a href="/page/habitaciones.html" class="hover:text-gray-100"
-              >Habitaciones</a
-            >
-          </li>
-          <li>
-            <a href="/page/contacto.html" class="hover:text-gray-100"
-              >Contáctanos</a
-            >
-          </li>
-        </ul>
-      </div>
+  <!-- Menú de registro y navegación para escritorio -->
+  <div class="hidden md:flex flex-col gap-2 login">
+    <button id="open-login-modal-desktop" class="login-btn">Iniciar Sesión</button>
+    <button class="login-btn" id="register-desktop">Registrarse</button>
+  </div>
 
-      <!-- Título y logo -->
-      <div class="flex items-center">
-        <div class="title flex">
-          <h1 class="text-gold font-bold text-lg">
-            Hotel El Rincón de <br />Carmen
-          </h1>
-          <img
-            src="img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.svg"
-            alt="Logo"
-            class="w-20 h-18"
-          />
-        </div>
+  <div class="navegacion hidden md:flex">
+    <ul class="flex gap-8 font-semibold menu-list">
+      <li><a href="index.html" class="hover:text-gray-100">Inicio</a></li>
+      <li><a href="/page/habitaciones.html" class="hover:text-gray-100">Habitaciones</a></li>
+      <li><a href="/page/contacto.html" class="hover:text-gray-100">Contáctanos</a></li>
+    </ul>
+  </div>
+
+  <!-- Título y logo -->
+  <div class="flex items-center">
+    <div class="title flex">
+      <h1 class="text-gold font-bold text-lg">
+        Hotel El Rincón de <br />Carmen
+      </h1>
+      <img src="img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.svg" alt="Logo" class="w-20 h-18" />
+    </div>
+  </div>
+</header>
+
+<!-- Modal de Inicio de Sesión -->
+<div id="login-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+  <div class="bg-white p-6 rounded-md shadow-lg w-11/12 sm:w-96">
+    <h2 class="text-center text-2xl font-semibold mb-4">Iniciar Sesión</h2>
+    <form id="login-form" class="space-y-4">
+      <div>
+        <label for="username" class="block font-semibold">Correo Electrónico</label>
+        <input type="email" id="username" name="username" class="w-full p-2 border border-gray-300 rounded-md" required />
       </div>
-    </header>
+      <div>
+        <label for="password" class="block font-semibold">Contraseña</label>
+        <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded-md" required />
+      </div>
+      <div class="flex justify-center mt-4">
+        <button type="submit" class="bg-teal-900 text-white px-4 py-2 rounded-md hover:bg-teal-700 w-full">Iniciar Sesión</button>
+      </div>
+      <div class="text-center mt-3">
+        <a href="#" id="forgot-password" class="text-teal-700 hover:underline">¿Olvidaste tu contraseña?</a>
+      </div>
+    </form>
+    <div class="text-center mt-4">
+      <button id="close-modal" class="text-teal-700 font-semibold">Cerrar</button>
+    </div>
+  </div>
+</div>
+
 
     <!-- carrucel -->
     <div class="relative w-full max-w-4xl mx-auto">
@@ -410,6 +403,34 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal login-->
+   <!-- Modal de Inicio de Sesión -->
+<div id="login-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+  <div class="bg-white p-6 rounded-md shadow-lg w-11/12 sm:w-96">
+    <h2 class="text-center text-2xl font-semibold mb-4">Iniciar Sesión</h2>
+    <form id="login-form" class="space-y-4">
+      <div>
+        <label for="username" class="block font-semibold">Correo Electrónico</label>
+        <input type="email" id="username" name="username" class="w-full p-2 border border-gray-300 rounded-md" required />
+      </div>
+      <div>
+        <label for="password" class="block font-semibold">Contraseña</label>
+        <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded-md" required />
+      </div>
+      <div class="flex justify-center mt-4">
+        <button type="submit" class="bg-teal-900 text-white px-4 py-2 rounded-md hover:bg-teal-700 w-full">Iniciar Sesión</button>
+      </div>
+      <div class="text-center mt-3">
+        <a href="#" id="forgot-password" class="text-teal-700 hover:underline">¿Olvidaste tu contraseña?</a>
+      </div>
+    </form>
+    <div class="text-center mt-4">
+      <button id="close-modal" class="text-teal-700 font-semibold">Cerrar</button>
+    </div>
+  </div>
+</div>
+
   </body>
 
   <script src="scripts/index.js"></script>

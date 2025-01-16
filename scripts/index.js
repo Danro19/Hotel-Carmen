@@ -29,6 +29,36 @@ setInterval(() => {
 }, 3000);
 
 //carrusel dos
+const carouselContainerDos = document.getElementById("carousel-containerDos");
+const leftButtonDos = document.getElementById("leftDos");
+const rightButtonDos = document.getElementById("rightDos");
+const itemsDos = document.querySelectorAll(".Dos");
+const itemWidthDos = carouselContainerDos.offsetWidth;
+let currentIndexDos = 0;
+
+function updateCarouselDos() {
+  carouselContainerDos.scrollTo({
+    left: currentIndexDos * itemWidthDos,
+    behavior: "smooth",
+  });
+}
+
+leftButtonDos.addEventListener("click", () => {
+  currentIndexDos = (currentIndexDos - 1 + itemsDos.length) % itemsDos.length;
+  updateCarouselDos();
+});
+
+rightButtonDos.addEventListener("click", () => {
+  currentIndexDos = (currentIndexDos + 1) % itemsDos.length;
+  updateCarouselDos();
+});
+
+setInterval(() => {
+  currentIndexDos = (currentIndexDos + 1) % itemsDos.length;
+  updateCarouselDos();
+}, 3000);
+
+// Carrusel principal
 const carouselContainer = document.querySelector(".carousel-container");
 const leftButton = document.getElementById("zeroLeft");
 const rightButton = document.getElementById("zeroRight");
@@ -143,3 +173,28 @@ window.addEventListener("resize", () => {
     // Redirigir a la página de registro
     window.location.href = "/Page/registro.html"; // Reemplaza con la URL de la página de registro
   });
+  
+  // Mostrar el modal cuando se haga clic en "Iniciar sesión"
+document.getElementById('open-login-modal').addEventListener('click', () => {
+  const modal = document.getElementById('login-modal');
+  modal.classList.remove('hidden'); // Muestra el modal
+});
+
+// Mostrar el modal para versión escritorio
+document.getElementById('open-login-modal-desktop').addEventListener('click', () => {
+  const modal = document.getElementById('login-modal');
+  modal.classList.remove('hidden'); // Muestra el modal
+});
+
+// Cerrar el modal cuando se haga clic en el botón de cerrar
+document.getElementById('close-modal').addEventListener('click', () => {
+  const modal = document.getElementById('login-modal');
+  modal.classList.add('hidden'); // Oculta el modal
+});
+
+// Cerrar el modal si se hace clic fuera del área del modal
+document.getElementById('login-modal').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('login-modal')) {
+    document.getElementById('login-modal').classList.add('hidden'); // Cierra el modal si se hace clic fuera de él
+  }
+});

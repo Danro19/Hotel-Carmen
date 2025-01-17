@@ -36,9 +36,43 @@ const itemsDos = document.querySelectorAll(".Dos");
 const itemWidthDos = carouselContainerDos.offsetWidth;
 let currentIndexDos = 0;
 
-function updateCarouselDos() {
-  carouselContainerDos.scrollTo({
-    left: currentIndexDos * itemWidthDos,
+
+// Carrusel principal
+const carouselContainer = document.querySelector(".carousel-container");
+const leftButton = document.getElementById("zeroLeft");
+const rightButton = document.getElementById("zeroRight");
+const items = document.querySelectorAll(".carousel-item");
+
+// Variables globales
+let itemWidth = carouselContainer.offsetWidth;
+let currentIndex = 0;
+let isScrolling = false; // Bandera para evitar conflictos entre el intervalo y los clics
+
+// Función para actualizar el carrusel
+function updateCarousel() {
+  carouselContainer.scrollTo({
+    left: currentIndex * itemWidth,
+    behavior: "smooth",
+  });
+}
+
+leftButton.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  updateCarousel();
+});
+
+rightButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateCarousel();
+});
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateCarousel();
+}, 3000);
+function updateCarousel() {
+  carouselContainer.scrollTo({
+    left: currentIndex * itemWidth,
     behavior: "smooth",
   });
 }
@@ -58,60 +92,6 @@ setInterval(() => {
   updateCarouselDos();
 }, 3000);
 
-// Carrusel principal
-const carouselContainer = document.querySelector(".carousel-container");
-const leftButton = document.getElementById("zeroLeft");
-const rightButton = document.getElementById("zeroRight");
-const items = document.querySelectorAll(".carousel-item");
-
-// Variables globales
-let itemWidth = carouselContainer.offsetWidth;
-let currentIndex = 0;
-let isScrolling = false; // Bandera para evitar conflictos entre el intervalo y los clics
-
-// Función para actualizar el carrusel
-function updateCarousel() {
-  // Evitar que se actualice si el carrusel está en movimiento
-  if (isScrolling) return;
-  isScrolling = true;
-
-  // Mover el carrusel
-  carouselContainer.scrollTo({
-    left: currentIndex * itemWidth,
-    behavior: "smooth",
-  });
-
-  // Habilitar de nuevo el desplazamiento después de un pequeño retraso (durante la animación)
-  setTimeout(() => {
-    isScrolling = false;
-  }, 500); // Este valor debe coincidir con la duración de la transición
-}
-
-// Función para manejar el clic en el botón izquierdo
-leftButton.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + items.length) % items.length;
-  updateCarousel();
-});
-
-// Función para manejar el clic en el botón derecho
-rightButton.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % items.length;
-  updateCarousel();
-});
-
-// Intervalo para mover el carrusel automáticamente cada 4 segundos
-setInterval(() => {
-  if (!isScrolling) {
-    currentIndex = (currentIndex + 1) % items.length;
-    updateCarousel();
-  }
-}, 4000);
-
-// Event listener para recalcular el ancho del carrusel cuando la ventana cambie de tamaño
-window.addEventListener("resize", () => {
-  itemWidth = carouselContainer.offsetWidth;
-  updateCarousel();
-});
 
 
 // Alternar el menú de registro

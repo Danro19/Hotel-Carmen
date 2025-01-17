@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
   </head>
-  <body>
+  <body class="bg-white">
  <header class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50">
   <!-- Menú de registro (SVG de usuario) -->
   <div class="mobile-login md:hidden relative">
@@ -63,7 +63,7 @@
 
 
 
-
+<div class="relative w-full max-w-4xl mx-auto"  id="bodyPage" >
     <!-- carrucel -->
     <div class="relative w-full max-w-4xl mx-auto">
       <button class="carousel-nav left" id="zeroLeft">&#8249;</button>
@@ -168,8 +168,7 @@
     </div>
 
     <div
-      class="introduccion relative w-full max-w-4xl mx-auto flex justify-between items-center flex-col"
-    >
+      class="introduccion relative w-full max-w-4xl mx-auto flex items-center flex-col" id="minCarlBody" >
       <!-- MiniCarruseles-->
       <div class="tres items-center justify-center">
         <h1><strong>SPA Y ZONAS HUMEDAS</strong></h1>
@@ -245,7 +244,7 @@
         </div>
       </div>
 
-      <div class="tres items-center justify-center">
+      <div class="tres items-center justify-center" id="comida">
         <h1><strong>COMIDA GOURMET</strong></h1>
       </div>
       <div class="dos">
@@ -333,16 +332,17 @@
         relájate en excursiones en kayak. Descubre el Parque Nacional Natural
         Corales del Rosario, un paraíso ecológico lleno de biodiversidad.
       </p>
-    </div>
-
-    <div
-      class="introduccion relative w-full max-w-4xl mx-auto flex justify-center aventura"
+      <div
+      class="introduccion relative w-full max-w-4xl mx-auto flex justify-center aventura imgFinal"
     >
       <img
         src="https://oceanario.co/wp-content/uploads/2022/12/subancla01-1024x561.jpg"
         alt="delfines"
       />
     </div>
+    </div>
+
+    
 
     <!-- boton whatsApp-->
     <a
@@ -362,6 +362,8 @@
         ></path>
       </svg>
     </a>
+    </div>
+    <!--Footer-->
     <footer class="bg-teal-900 text-white py-8">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-center items-center">
@@ -380,32 +382,7 @@
       </div>
     </footer>
 
-    <!-- Modal login-->
-   <!-- Modal de Inicio de Sesión -->
-<div id="login-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-  <div class="bg-white p-6 rounded-md shadow-lg w-11/12 sm:w-96">
-    <h2 class="text-center text-2xl font-semibold mb-4">Iniciar Sesión</h2>
-    <form id="login-form" class="space-y-4">
-      <div>
-        <label for="username" class="block font-semibold">Correo Electrónico</label>
-        <input type="email" id="username" name="username" class="w-full p-2 border border-gray-300 rounded-md" required />
-      </div>
-      <div>
-        <label for="password" class="block font-semibold">Contraseña</label>
-        <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded-md" required />
-      </div>
-      <div class="flex justify-center mt-4">
-        <button type="submit" class="bg-teal-900 text-white px-4 py-2 rounded-md hover:bg-teal-700 w-full">Iniciar Sesión</button>
-      </div>
-      <div class="text-center mt-3">
-        <a href="#" id="forgot-password" class="text-teal-700 hover:underline">¿Olvidaste tu contraseña?</a>
-      </div>
-    </form>
-    <div class="text-center mt-4">
-      <button id="close-modal" class="text-teal-700 font-semibold">Cerrar</button>
-    </div>
-  </div>
-</div>
+
 
   </body>
 

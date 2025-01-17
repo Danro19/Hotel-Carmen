@@ -47,7 +47,9 @@ h1,h2,h3 {
     height: 100%;
     /* Las imágenes se adaptan a la altura del contenedor */
     object-fit: cover;
+
     /* Mantiene las proporciones de la imagen sin deformarla */
+    position: relative;
 }
 
 /* Botones de navegación (izquierda y derecha) */
@@ -82,10 +84,10 @@ h1,h2,h3 {
     right: 1rem;
 }
 
-/* Contenedor de las imágenes (la caja contenedora) */
+/* Contenedor de las imágenes */
 .conteinerUno {
     margin-top: 8vw;
-    /* Ajuste para mejorar la separación superior */
+    /* Ajuste para mejorar la separacion superior */
 }
 
 .introduccion{
@@ -100,21 +102,27 @@ h1,h2,h3 {
     
 }
 
+.dos{
+    position: relative;
+    top:100px
+}
+
 
 .uno, .dos, .Dos img{
     width: 80vw;
     height: 30vh;
     border-radius: 2vw;
+    object-fit: cover
 }
 
 .carousel-nav.leftUno {
     left: 0.5rem;
-    top: 10vh;
+    top: 15vh;
 }
 
 .carousel-nav.rightUno {
     right: 0.5rem;
-    top: 10vh;
+    top: 15vh;
 }
 
 img{
@@ -193,4 +201,36 @@ img{
     width: 400px;
     margin: auto;
     max-width: 90%;
+}
+
+#rightDos{
+    top:  5vh;
+}
+#leftDos{
+    top: 5vh;
+}
+.introduccion p{
+    padding: 10vh;
+    
+}
+
+#bodyPage{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+}
+
+.comida{
+    margin-bottom: 100px;
+}
+
+.imgFinal img{
+    object-fit: cover;
+    height: 100%;
+}
+
+#minCarlBody{
+    position: relative;
+    bottom: 90px;
 }

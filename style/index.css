@@ -234,3 +234,12 @@ img{
     position: relative;
     bottom: 90px;
 }
+
+#modalLogin::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalLogin{
+    border-radius: 2vw;
+    padding: 2vw;
+}

@@ -3,16 +3,16 @@
     {
       "camaSencilla": [
         {
-          "id": 1,
-          "room": "201",
+          
+          "id": "201",
           "cantPersonas": 1,
-          "nombre": "Clasica",
+          "nombre": "Single Basic",
           "descripcion": "Una habitación perfecta para una persona que busca comodidad y funcionalidad. Cuenta con una cama basica, ideal para un descanso reparador durante su estancia. Acceso a servicios básicos de calidad para garantizar una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://hotelesdann.com/dann-carlton-bogota/wp-content/uploads/sites/3/2020/08/habitacin-estndar-hotel-dann-carlton-bogot-colombia_37577235816_o.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -21,16 +21,16 @@
           "precio": 300
         },
         {
-          "id": 2,
-          "room": "202",
+          
+          "id": "202",
           "cantPersonas": 1,
-          "nombre": "Clasica",
+          "nombre": "Single Basic",
           "descripcion": "Una habitación perfecta para una persona que busca comodidad y funcionalidad. Cuenta con una cama basica, ideal para un descanso reparador durante su estancia. Acceso a servicios básicos de calidad para garantizar una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://hotelesdann.com/dann-carlton-bogota/wp-content/uploads/sites/3/2020/08/habitacin-estndar-hotel-dann-carlton-bogot-colombia_37577235816_o.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -39,16 +39,16 @@
           "precio": 300
         },
         {
-          "id": 3,
-          "room": "203",
+          
+          "id": "203",
           "cantPersonas": 1,
-          "nombre": "Clasica",
+          "nombre": "Single Basic",
           "descripcion": "Una habitación perfecta para una persona que busca comodidad y funcionalidad. Cuenta con una cama basica, ideal para un descanso reparador durante su estancia. Acceso a servicios básicos de calidad para garantizar una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://hotelesdann.com/dann-carlton-bogota/wp-content/uploads/sites/3/2020/08/habitacin-estndar-hotel-dann-carlton-bogot-colombia_37577235816_o.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -57,16 +57,16 @@
           "precio": 300
         },
         {
-          "id": 4,
-          "room": "204",
+          
+          "id": "204",
           "cantPersonas": 1,
-          "nombre": "Clasica",
+          "nombre": "Single Basic",
           "descripcion": "Una habitación perfecta para una persona que busca comodidad y funcionalidad. Cuenta con una cama basica, ideal para un descanso reparador durante su estancia. Acceso a servicios básicos de calidad para garantizar una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://aquamarinamanta.com/wp-content/uploads/2019/06/estandar-1170x780.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -75,16 +75,16 @@
           "precio": 300
         },
         {
-          "id": 5,
-          "room": "205",
+          
+          "id": "205",
           "cantPersonas": 1,
-          "nombre": "Clasica",
+          "nombre": "Single Basic",
           "descripcion": "Una habitación perfecta para una persona que busca comodidad y funcionalidad. Cuenta con una cama basica, ideal para un descanso reparador durante su estancia. Acceso a servicios básicos de calidad para garantizar una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://aquamarinamanta.com/wp-content/uploads/2019/06/estandar-1170x780.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -93,16 +93,16 @@
           "precio": 300
         },
         {
-          "id": 6,
-          "room": "206",
+          
+          "id": "206",
           "cantPersonas": 1,
-          "nombre": "Clasica",
+          "nombre": "Single Basic",
           "descripcion": "Una habitación perfecta para una persona que busca comodidad y funcionalidad. Cuenta con una cama basica, ideal para un descanso reparador durante su estancia. Acceso a servicios básicos de calidad para garantizar una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://aquamarinamanta.com/wp-content/uploads/2019/06/estandar-1170x780.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -111,16 +111,16 @@
           "precio": 300
         },
         {
-          "id": 7,
-          "room": "1201",
-          "cantPersonas": 1,
+          
+          "id": "1201",
+          "cantPersonas": 1     ,
           "nombre": "Single Deluxe",
           "descripcion": "La opción ideal para quienes desean una experiencia más exclusiva. Esta habitación incluye una cama basica de calidad superior, minibar con bebidas selectas y un jacuzzi privado para disfrutar de un relajante baño. Perfecta para quienes buscan confort y lujo en su estancia.",
           "internet": true,
           "minibar": true,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://cdn0.uncomo.com/es/posts/6/1/1/como_reservar_una_habitacion_por_horas_en_un_hotel_de_lujo_18116_orig.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -130,8 +130,8 @@
           "precio": 450
         },
         {
-          "id": 8,
-          "room": "1202",
+          
+          "id": "1202",
           "cantPersonas": 1,
           "nombre": "Single Deluxe",
           "descripcion": "La opción ideal para quienes desean una experiencia más exclusiva. Esta habitación incluye una cama basica de calidad superior, minibar con bebidas selectas y un jacuzzi privado para disfrutar de un relajante baño. Perfecta para quienes buscan confort y lujo en su estancia.",
@@ -139,7 +139,7 @@
           "minibar": true,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://cdn0.uncomo.com/es/posts/6/1/1/como_reservar_una_habitacion_por_horas_en_un_hotel_de_lujo_18116_orig.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -149,8 +149,8 @@
           "precio": 450
         },
         {
-          "id": 9,
-          "room": "1203",
+          
+          "id": "1203",
           "cantPersonas": 1,
           "nombre": "Single Deluxe",
           "descripcion": "La opción ideal para quienes desean una experiencia más exclusiva. Esta habitación incluye una cama basica de calidad superior, minibar con bebidas selectas y un jacuzzi privado para disfrutar de un relajante baño. Perfecta para quienes buscan confort y lujo en su estancia.",
@@ -158,7 +158,7 @@
           "minibar": true,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://cdn0.uncomo.com/es/posts/6/1/1/como_reservar_una_habitacion_por_horas_en_un_hotel_de_lujo_18116_orig.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -168,8 +168,8 @@
           "precio": 450
         },
         {
-          "id": 10,
-          "room": "1204",
+          
+          "id": "1204",
           "cantPersonas": 1,
           "nombre": "Single Deluxe",
           "descripcion": "La opción ideal para quienes desean una experiencia más exclusiva. Esta habitación incluye una cama basica de calidad superior, minibar con bebidas selectas y un jacuzzi privado para disfrutar de un relajante baño. Perfecta para quienes buscan confort y lujo en su estancia.",
@@ -177,7 +177,7 @@
           "minibar": true,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/fotos-premium/habitacion-hotel-lujo-vista-al-mar-montanas_865967-252766.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -187,8 +187,8 @@
           "precio": 450
         },
         {
-          "id": 11,
-          "room": "1205",
+          
+          "id": "1205",
           "cantPersonas": 1,
           "nombre": "Single Deluxe",
           "descripcion": "La opción ideal para quienes desean una experiencia más exclusiva. Esta habitación incluye una cama basica de calidad superior, minibar con bebidas selectas y un jacuzzi privado para disfrutar de un relajante baño. Perfecta para quienes buscan confort y lujo en su estancia.",
@@ -196,7 +196,7 @@
           "minibar": true,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/fotos-premium/habitacion-hotel-lujo-vista-al-mar-montanas_865967-252766.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -206,8 +206,8 @@
           "precio": 450
         },
         {
-          "id": 12,
-          "room": "1206",
+          
+          "id": "1206",
           "cantPersonas": 1,
           "nombre": "Single Deluxe",
           "descripcion": "La opción ideal para quienes desean una experiencia más exclusiva. Esta habitación incluye una cama basica de calidad superior, minibar con bebidas selectas y un jacuzzi privado para disfrutar de un relajante baño. Perfecta para quienes buscan confort y lujo en su estancia.",
@@ -215,7 +215,7 @@
           "minibar": true,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/fotos-premium/habitacion-hotel-lujo-vista-al-mar-montanas_865967-252766.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -227,16 +227,16 @@
       ],
       "camaDoble": [
         {
-          "id": 1,
-          "room": "301",
+          
+          "id": "301",
           "cantPersonas": 2,
-          "nombre": "Doble Clasica",
+          "nombre": "Doble Clásica",
           "descripcion": "Ideal para dos personas, esta habitación cuenta con una cama doble, diseñada para ofrecer comodidad y descanso. Es la opción perfecta para aquellos que buscan una estancia funcional sin sacrificar confort. Servicios básicos que garantizan una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -245,16 +245,16 @@
           "precio": 400
         },
         {
-          "id": 2,
-          "room": "302",
+          
+          "id": "302",
           "cantPersonas": 2,
-          "nombre": "Doble Clasica",
+          "nombre": "Doble Clásica",
           "descripcion": "Ideal para dos personas, esta habitación cuenta con una cama doble, diseñada para ofrecer comodidad y descanso. Es la opción perfecta para aquellos que buscan una estancia funcional sin sacrificar confort. Servicios básicos que garantizan una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -263,16 +263,16 @@
           "precio": 400
         },
         {
-          "id": 3,
-          "room": "303",
+          
+          "id": "303",
           "cantPersonas": 2,
-          "nombre": "Doble Clasica",
+          "nombre": "Doble Clásica",
           "descripcion": "Ideal para dos personas, esta habitación cuenta con una cama doble, diseñada para ofrecer comodidad y descanso. Es la opción perfecta para aquellos que buscan una estancia funcional sin sacrificar confort. Servicios básicos que garantizan una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -281,16 +281,16 @@
           "precio": 400
         },
         {
-          "id": 4,
-          "room": "304",
+          
+          "id": "304",
           "cantPersonas": 2,
-          "nombre": "Doble Clasica",
+          "nombre": "Doble Clásica",
           "descripcion": "Ideal para dos personas, esta habitación cuenta con una cama doble, diseñada para ofrecer comodidad y descanso. Es la opción perfecta para aquellos que buscan una estancia funcional sin sacrificar confort. Servicios básicos que garantizan una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://textileurotex.com/wp-content/uploads/2023/10/ropa-cama-lujo.jpg",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRziVOoRlE4XlFYIbWZPG18PKX7SriMBc6dw&s",
@@ -299,16 +299,16 @@
           "precio": 400
         },
         {
-          "id": 5,
-          "room": "305",
+          
+          "id": "305",
           "cantPersonas": 2,
-          "nombre": "Doble Clasica",
+          "nombre": "Doble Clásica",
           "descripcion": "Ideal para dos personas, esta habitación cuenta con una cama doble, diseñada para ofrecer comodidad y descanso. Es la opción perfecta para aquellos que buscan una estancia funcional sin sacrificar confort. Servicios básicos que garantizan una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://textileurotex.com/wp-content/uploads/2023/10/ropa-cama-lujo.jpg",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRziVOoRlE4XlFYIbWZPG18PKX7SriMBc6dw&s",
@@ -317,16 +317,16 @@
           "precio": 400
         },
         {
-          "id": 6,
-          "room": "306",
+          
+          "id": "306",
           "cantPersonas": 2,
-          "nombre": "Doble Clasica",
+          "nombre": "Doble Clásica",
           "descripcion": "Ideal para dos personas, esta habitación cuenta con una cama doble, diseñada para ofrecer comodidad y descanso. Es la opción perfecta para aquellos que buscan una estancia funcional sin sacrificar confort. Servicios básicos que garantizan una experiencia agradable.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://textileurotex.com/wp-content/uploads/2023/10/ropa-cama-lujo.jpg",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRziVOoRlE4XlFYIbWZPG18PKX7SriMBc6dw&s",
@@ -335,8 +335,8 @@
           "precio": 400
         },
         {
-          "id": 7,
-          "room": "1301",
+          
+          "id": "1301",
           "cantPersonas": 2,
           "nombre": "Double Prestige",
           "descripcion": "Este cuarto ofrece lujo y comodidad en su máxima expresión. Con una amplia cama doble, minibar con bebidas premium y un jacuzzi privado, la habitación Double Prestige asegura una experiencia de descanso inigualable, perfecta para aquellos que buscan algo más exclusivo.",
@@ -344,7 +344,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://static.hosteltur.com/app/public/uploads/img/articles/2015/02/01/L_5b14fa96e78e8_shutterstock_luxuryhotel.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -355,8 +355,8 @@
           "precio": 600
         },
         {
-          "id": 8,
-          "room": "1302",
+          
+          "id": "1302",
           "cantPersonas": 2,
           "nombre": "Double Prestige",
           "descripcion": "Este cuarto ofrece lujo y comodidad en su máxima expresión. Con una amplia cama doble, minibar con bebidas premium y un jacuzzi privado, la habitación Double Prestige asegura una experiencia de descanso inigualable, perfecta para aquellos que buscan algo más exclusivo.",
@@ -364,7 +364,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://static.hosteltur.com/app/public/uploads/img/articles/2015/02/01/L_5b14fa96e78e8_shutterstock_luxuryhotel.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -375,8 +375,8 @@
           "precio": 600
         },
         {
-          "id": 9,
-          "room": "1303",
+          
+          "id": "1303",
           "cantPersonas": 2,
           "nombre": "Double Prestige",
           "descripcion": "Este cuarto ofrece lujo y comodidad en su máxima expresión. Con una amplia cama doble, minibar con bebidas premium y un jacuzzi privado, la habitación Double Prestige asegura una experiencia de descanso inigualable, perfecta para aquellos que buscan algo más exclusivo.",
@@ -384,7 +384,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://static.hosteltur.com/app/public/uploads/img/articles/2015/02/01/L_5b14fa96e78e8_shutterstock_luxuryhotel.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -395,8 +395,8 @@
           "precio": 600
         },
         {
-          "id": 10,
-          "room": "1304",
+          
+          "id": "1304",
           "cantPersonas": 2,
           "nombre": "Double Prestige",
           "descripcion": "Este cuarto ofrece lujo y comodidad en su máxima expresión. Con una amplia cama doble, minibar con bebidas premium y un jacuzzi privado, la habitación Double Prestige asegura una experiencia de descanso inigualable, perfecta para aquellos que buscan algo más exclusivo.",
@@ -404,7 +404,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://www.sofitelbarucalablanca.com/wp-content/uploads/sites/19/2023/04/DUF_7052-v-ok-1170x780.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -415,8 +415,8 @@
           "precio": 600
         },
         {
-          "id": 11,
-          "room": "1305",
+          
+          "id": "1305",
           "cantPersonas": 2,
           "nombre": "Double Prestige",
           "descripcion": "Este cuarto ofrece lujo y comodidad en su máxima expresión. Con una amplia cama doble, minibar con bebidas premium y un jacuzzi privado, la habitación Double Prestige asegura una experiencia de descanso inigualable, perfecta para aquellos que buscan algo más exclusivo.",
@@ -424,7 +424,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://www.sofitelbarucalablanca.com/wp-content/uploads/sites/19/2023/04/DUF_7052-v-ok-1170x780.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -435,8 +435,8 @@
           "precio": 600
         },
         {
-          "id": 12,
-          "room": "1306",
+          
+          "id": "1306",
           "cantPersonas": 2,
           "nombre": "Double Prestige",
           "descripcion": "Este cuarto ofrece lujo y comodidad en su máxima expresión. Con una amplia cama doble, minibar con bebidas premium y un jacuzzi privado, la habitación Double Prestige asegura una experiencia de descanso inigualable, perfecta para aquellos que buscan algo más exclusivo.",
@@ -444,7 +444,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://www.sofitelbarucalablanca.com/wp-content/uploads/sites/19/2023/04/DUF_7052-v-ok-1170x780.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285205133.jpg?k=30c5ac7f5441b40aebda282557a84eace3daf348c24c49a20255cf4c0b98b9bc&o=&hp=1",
@@ -457,8 +457,8 @@
       ],
       "dobleCamabasica": [
         {
-          "id": 1,
-          "room": "401",
+          
+          "id": "401",
           "cantPersonas": 2,
           "nombre": "Twin Clasic",
           "descripcion": "Habitación cómoda y funcional con dos camas basicas, ideal para amigos o compañeros de viaje. Ofrece el espacio necesario para el descanso, sin lujos pero con todos los servicios básicos para garantizar una estancia placentera.",
@@ -466,7 +466,7 @@
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.hotelpresidente.com.bo/images/slider-hdoble-1.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -475,8 +475,8 @@
           "precio": 400
         },
         {
-          "id": 2,
-          "room": "402",
+          
+          "id": "402",
           "cantPersonas": 2,
           "nombre": "Twin Clasic",
           "descripcion": "Habitación cómoda y funcional con dos camas basicas, ideal para amigos o compañeros de viaje. Ofrece el espacio necesario para el descanso, sin lujos pero con todos los servicios básicos para garantizar una estancia placentera.",
@@ -484,7 +484,7 @@
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.hotelpresidente.com.bo/images/slider-hdoble-1.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -493,8 +493,8 @@
           "precio": 400
         },
         {
-          "id": 3,
-          "room": "403",
+          
+          "id": "403",
           "cantPersonas": 2,
           "nombre": "Twin Clasic",
           "descripcion": "Habitación cómoda y funcional con dos camas basicas, ideal para amigos o compañeros de viaje. Ofrece el espacio necesario para el descanso, sin lujos pero con todos los servicios básicos para garantizar una estancia placentera.",
@@ -502,7 +502,7 @@
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.hotelpresidente.com.bo/images/slider-hdoble-1.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -511,8 +511,8 @@
           "precio": 400
         },
         {
-          "id": 4,
-          "room": "404",
+          
+          "id": "404",
           "cantPersonas": 2,
           "nombre": "Twin Clasic",
           "descripcion": "Habitación cómoda y funcional con dos camas basicas, ideal para amigos o compañeros de viaje. Ofrece el espacio necesario para el descanso, sin lujos pero con todos los servicios básicos para garantizar una estancia placentera.",
@@ -520,7 +520,7 @@
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.hotelpresidente.com.bo/images/slider-hdoble-1.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -529,8 +529,8 @@
           "precio": 400
         },
         {
-          "id": 5,
-          "room": "405",
+          
+          "id": "405",
           "cantPersonas": 2,
           "nombre": "Twin Clasic",
           "descripcion": "Habitación cómoda y funcional con dos camas basicas, ideal para amigos o compañeros de viaje. Ofrece el espacio necesario para el descanso, sin lujos pero con todos los servicios básicos para garantizar una estancia placentera.",
@@ -538,7 +538,7 @@
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.hotelpresidente.com.bo/images/slider-hdoble-1.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -547,8 +547,8 @@
           "precio": 400
         },
         {
-          "id": 6,
-          "room": "406",
+          
+          "id": "406",
           "cantPersonas": 2,
           "nombre": "Twin Clasic",
           "descripcion": "Habitación cómoda y funcional con dos camas basicas, ideal para amigos o compañeros de viaje. Ofrece el espacio necesario para el descanso, sin lujos pero con todos los servicios básicos para garantizar una estancia placentera.",
@@ -556,7 +556,7 @@
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.hotelpresidente.com.bo/images/slider-hdoble-1.jpg",
             "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34845084.jpg?k=6cc6e2ddf95562deaf8ebbedd2217d20e4f2bb22cdf244275fc7bbc4b8aac474&o=&hp=1",
@@ -565,8 +565,8 @@
           "precio": 400
         },
         {
-          "id": 7,
-          "room": "1101",
+          
+          "id": "1101",
           "cantPersonas": 2,
           "nombre": "Twin Elegance",
           "descripcion": "Esta habitación ofrece una experiencia de lujo con dos camas basicas de alta calidad. Además, incluye minibar con bebidas exclusivas y un jacuzzi privado para disfrutar de un relajante baño. Twin Elegance es la opción perfecta para quienes buscan comodidad y elegancia.",
@@ -574,7 +574,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -585,8 +585,8 @@
           "precio": 600
         },
         {
-          "id": 8,
-          "room": "1102",
+          
+          "id": "1102",
           "cantPersonas": 2,
           "nombre": "Twin Elegance",
           "descripcion": "Esta habitación ofrece una experiencia de lujo con dos camas basicas de alta calidad. Además, incluye minibar con bebidas exclusivas y un jacuzzi privado para disfrutar de un relajante baño. Twin Elegance es la opción perfecta para quienes buscan comodidad y elegancia.",
@@ -594,7 +594,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -605,8 +605,8 @@
           "precio": 600
         },
         {
-          "id": 9,
-          "room": "1103",
+          
+          "id": "1103",
           "cantPersonas": 2,
           "nombre": "Twin Elegance",
           "descripcion": "Esta habitación ofrece una experiencia de lujo con dos camas basicas de alta calidad. Además, incluye minibar con bebidas exclusivas y un jacuzzi privado para disfrutar de un relajante baño. Twin Elegance es la opción perfecta para quienes buscan comodidad y elegancia.",
@@ -614,7 +614,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -625,8 +625,8 @@
           "precio": 600
         },
         {
-          "id": 10,
-          "room": "1104",
+          
+          "id": "1104",
           "cantPersonas": 2,
           "nombre": "Twin Elegance",
           "descripcion": "Esta habitación ofrece una experiencia de lujo con dos camas basicas de alta calidad. Además, incluye minibar con bebidas exclusivas y un jacuzzi privado para disfrutar de un relajante baño. Twin Elegance es la opción perfecta para quienes buscan comodidad y elegancia.",
@@ -634,7 +634,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -645,8 +645,8 @@
           "precio": 600
         },
         {
-          "id": 11,
-          "room": "1105",
+          
+          "id": "1105",
           "cantPersonas": 2,
           "nombre": "Twin Elegance",
           "descripcion": "Esta habitación ofrece una experiencia de lujo con dos camas basicas de alta calidad. Además, incluye minibar con bebidas exclusivas y un jacuzzi privado para disfrutar de un relajante baño. Twin Elegance es la opción perfecta para quienes buscan comodidad y elegancia.",
@@ -654,7 +654,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -665,8 +665,8 @@
           "precio": 600
         },
         {
-          "id": 12,
-          "room": "1106",
+          
+          "id": "1106",
           "cantPersonas": 2,
           "nombre": "Twin Elegance",
           "descripcion": "Esta habitación ofrece una experiencia de lujo con dos camas basicas de alta calidad. Además, incluye minibar con bebidas exclusivas y un jacuzzi privado para disfrutar de un relajante baño. Twin Elegance es la opción perfecta para quienes buscan comodidad y elegancia.",
@@ -674,7 +674,7 @@
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
@@ -687,16 +687,16 @@
       ],
       "camaroteCamaDoble": [
         {
-          "id": 1,
-          "room": "601",
+          
+          "id": "601",
           "cantPersonas": 4,
-          "Nombre": "Familiar Clasica",
+          "nombre": "Familiar Clásica",
           "descripcion": "Ideal para familias o grupos, esta habitación tiene un camarote y una cama doble. Ofrece el espacio necesario para disfrutar de una estancia cómoda y práctica, con servicios básicos pensados en el confort de los huéspedes.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.mueblesdiversos.com/wp-content/uploads/2024/05/CAMAROTE-BONANZA-1m-CG-2.jpg",
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
@@ -706,16 +706,16 @@
           "precio": 600
         },
         {
-          "id": 2,
-          "room": "602",
+          
+          "id": "602",
           "cantPersonas": 4,
-          "Nombre": "Familiar Clasica",
+          "nombre": "Familiar Clásica",
           "descripcion": "Ideal para familias o grupos, esta habitación tiene un camarote y una cama doble. Ofrece el espacio necesario para disfrutar de una estancia cómoda y práctica, con servicios básicos pensados en el confort de los huéspedes.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.mueblesdiversos.com/wp-content/uploads/2024/05/CAMAROTE-BONANZA-1m-CG-2.jpg",
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
@@ -725,16 +725,16 @@
           "precio": 600
         },
         {
-          "id": 3,
-          "room": "603",
+          
+          "id": "603",
           "cantPersonas": 4,
-          "Nombre": "Familiar Clasica",
+          "nombre": "Familiar Clásica",
           "descripcion": "Ideal para familias o grupos, esta habitación tiene un camarote y una cama doble. Ofrece el espacio necesario para disfrutar de una estancia cómoda y práctica, con servicios básicos pensados en el confort de los huéspedes.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.mueblesdiversos.com/wp-content/uploads/2024/05/CAMAROTE-BONANZA-1m-CG-2.jpg",
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
@@ -744,16 +744,16 @@
           "precio": 600
         },
         {
-          "id": 4,
-          "room": "604",
+          
+          "id": "604",
           "cantPersonas": 4,
-          "Nombre": "Familiar Clasica",
+          "nombre": "Familiar Clásica",
           "descripcion": "Ideal para familias o grupos, esta habitación tiene un camarote y una cama doble. Ofrece el espacio necesario para disfrutar de una estancia cómoda y práctica, con servicios básicos pensados en el confort de los huéspedes.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.mueblesdiversos.com/wp-content/uploads/2024/05/CAMAROTE-BONANZA-1m-CG-2.jpg",
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
@@ -763,16 +763,16 @@
           "precio": 600
         },
         {
-          "id": 5,
-          "room": "605",
+          
+          "id": "605",
           "cantPersonas": 4,
-          "Nombre": "Familiar Clasica",
+          "nombre": "Familiar Clásica",
           "descripcion": "Ideal para familias o grupos, esta habitación tiene un camarote y una cama doble. Ofrece el espacio necesario para disfrutar de una estancia cómoda y práctica, con servicios básicos pensados en el confort de los huéspedes.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.mueblesdiversos.com/wp-content/uploads/2024/05/CAMAROTE-BONANZA-1m-CG-2.jpg",
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
@@ -782,16 +782,16 @@
           "precio": 600
         },
         {
-          "id": 6,
-          "room": "606",
+          
+          "id": "606",
           "cantPersonas": 4,
-          "Nombre": "Familiar Clasica",
+          "nombre": "Familiar Clásica",
           "descripcion": "Ideal para familias o grupos, esta habitación tiene un camarote y una cama doble. Ofrece el espacio necesario para disfrutar de una estancia cómoda y práctica, con servicios básicos pensados en el confort de los huéspedes.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://www.mueblesdiversos.com/wp-content/uploads/2024/05/CAMAROTE-BONANZA-1m-CG-2.jpg",
             "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
@@ -801,16 +801,16 @@
           "precio": 600
         },
         {
-          "id": 7,
-          "room": "1401",
+          
+          "id": "1401",
           "cantPersonas": 4,
-          "Nombre": "Familiar Premium",
+          "nombre": "Familiar Premium",
           "descripcion": "Una opción espaciosa y lujosa para familias. Con un camarote y una cama doble, además de minibar con bebidas premium y un jacuzzi privado, Familiar Premium brinda el descanso ideal para todos los miembros de la familia, en un ambiente cómodo y exclusivo.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://media.traveler.es/photos/62e38b1a97500f54d427e589/4:3/w_2663,h_1997,c_limit/I_julio_suits_73.jpg",
@@ -822,16 +822,16 @@
           "precio": 750
         },
         {
-          "id": 8,
-          "room": "1402",
+          
+          "id": "1402",
           "cantPersonas": 4,
-          "Nombre": "Familiar Premium",
+          "nombre": "Familiar Premium",
           "descripcion": "Una opción espaciosa y lujosa para familias. Con un camarote y una cama doble, además de minibar con bebidas premium y un jacuzzi privado, Familiar Premium brinda el descanso ideal para todos los miembros de la familia, en un ambiente cómodo y exclusivo.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://media.traveler.es/photos/62e38b1a97500f54d427e589/4:3/w_2663,h_1997,c_limit/I_julio_suits_73.jpg",
@@ -843,16 +843,16 @@
           "precio": 750
         },
         {
-          "id": 9,
-          "room": "1403",
+          
+          "id": "1403",
           "cantPersonas": 4,
-          "Nombre": "Familiar Premium",
+          "nombre": "Familiar Premium",
           "descripcion": "Una opción espaciosa y lujosa para familias. Con un camarote y una cama doble, además de minibar con bebidas premium y un jacuzzi privado, Familiar Premium brinda el descanso ideal para todos los miembros de la familia, en un ambiente cómodo y exclusivo.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://media.traveler.es/photos/62e38b1a97500f54d427e589/4:3/w_2663,h_1997,c_limit/I_julio_suits_73.jpg",
@@ -864,16 +864,16 @@
           "precio": 750
         },
         {
-          "id": 10,
-          "room": "1404",
+          
+          "id": "1404",
           "cantPersonas": 4,
-          "Nombre": "Familiar Premium",
+          "nombre": "Familiar Premium",
           "descripcion": "Una opción espaciosa y lujosa para familias. Con un camarote y una cama doble, además de minibar con bebidas premium y un jacuzzi privado, Familiar Premium brinda el descanso ideal para todos los miembros de la familia, en un ambiente cómodo y exclusivo.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://media.traveler.es/photos/62e38b1a97500f54d427e589/4:3/w_2663,h_1997,c_limit/I_julio_suits_73.jpg",
@@ -885,16 +885,16 @@
           "precio": 750
         },
         {
-          "id": 11,
-          "room": "1405",
+          
+          "id": "1405",
           "cantPersonas": 4,
-          "Nombre": "Familiar Premium",
+          "nombre": "Familiar Premium",
           "descripcion": "Una opción espaciosa y lujosa para familias. Con un camarote y una cama doble, además de minibar con bebidas premium y un jacuzzi privado, Familiar Premium brinda el descanso ideal para todos los miembros de la familia, en un ambiente cómodo y exclusivo.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://media.traveler.es/photos/62e38b1a97500f54d427e589/4:3/w_2663,h_1997,c_limit/I_julio_suits_73.jpg",
@@ -906,16 +906,16 @@
           "precio": 750
         },
         {
-          "id": 12,
-          "room": "1406",
+          
+          "id": "1406",
           "cantPersonas": 4,
-          "Nombre": "Familiar Premium",
+          "nombre": "Familiar Premium",
           "descripcion": "Una opción espaciosa y lujosa para familias. Con un camarote y una cama doble, además de minibar con bebidas premium y un jacuzzi privado, Familiar Premium brinda el descanso ideal para todos los miembros de la familia, en un ambiente cómodo y exclusivo.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://media.traveler.es/photos/62e38b1a97500f54d427e589/4:3/w_2663,h_1997,c_limit/I_julio_suits_73.jpg",
@@ -929,16 +929,16 @@
       ],
       "dosCamarotes": [
         {
-          "id": 1,
-          "room": "701",
+          
+          "id": "701",
           "cantPersonas": 4,
-          "Nombre": "Twin Camarotes",
+          "nombre": "Twin Camarotes",
           "descripcion": "Este cuarto tiene dos camarotes, lo que lo convierte en una excelente opción para grupos o familias. Ofrece un espacio cómodo y funcional, con todo lo necesario para una estancia agradable sin lujos, pero con un ambiente acogedor.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
@@ -948,16 +948,16 @@
           "precio": 600
         },
         {
-          "id": 2,
-          "room": "702",
+          
+          "id": "702",
           "cantPersonas": 4,
-          "Nombre": "Twin Camarotes",
+          "nombre": "Twin Camarotes",
           "descripcion": "Este cuarto tiene dos camarotes, lo que lo convierte en una excelente opción para grupos o familias. Ofrece un espacio cómodo y funcional, con todo lo necesario para una estancia agradable sin lujos, pero con un ambiente acogedor.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
@@ -967,16 +967,16 @@
           "precio": 600
         },
         {
-          "id": 3,
-          "room": "703",
+          
+          "id": "703",
           "cantPersonas": 4,
-          "Nombre": "Twin Camarotes",
+          "nombre": "Twin Camarotes",
           "descripcion": "Este cuarto tiene dos camarotes, lo que lo convierte en una excelente opción para grupos o familias. Ofrece un espacio cómodo y funcional, con todo lo necesario para una estancia agradable sin lujos, pero con un ambiente acogedor.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
@@ -986,16 +986,16 @@
           "precio": 600
         },
         {
-          "id": 4,
-          "room": "704",
+          
+          "id": "704",
           "cantPersonas": 4,
-          "Nombre": "Twin Camarotes",
+          "nombre": "Twin Camarotes",
           "descripcion": "Este cuarto tiene dos camarotes, lo que lo convierte en una excelente opción para grupos o familias. Ofrece un espacio cómodo y funcional, con todo lo necesario para una estancia agradable sin lujos, pero con un ambiente acogedor.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
@@ -1005,16 +1005,16 @@
           "precio": 600
         },
         {
-          "id": 5,
-          "room": "705",
+          
+          "id": "705",
           "cantPersonas": 4,
-          "Nombre": "Twin Camarotes",
+          "nombre": "Twin Camarotes",
           "descripcion": "Este cuarto tiene dos camarotes, lo que lo convierte en una excelente opción para grupos o familias. Ofrece un espacio cómodo y funcional, con todo lo necesario para una estancia agradable sin lujos, pero con un ambiente acogedor.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
@@ -1024,16 +1024,16 @@
           "precio": 600
         },
         {
-          "id": 6,
-          "room": "706",
+          
+          "id": "706",
           "cantPersonas": 4,
-          "Nombre": "Twin Camarotes",
+          "nombre": "Twin Camarotes",
           "descripcion": "Este cuarto tiene dos camarotes, lo que lo convierte en una excelente opción para grupos o familias. Ofrece un espacio cómodo y funcional, con todo lo necesario para una estancia agradable sin lujos, pero con un ambiente acogedor.",
           "internet": true,
           "minibar": false,
           "jacuzzi": false,
           "reserva": true,
-          "tipoRoom": "basico",
+          "tipoRoom": "Clásica",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
@@ -1043,19 +1043,18 @@
           "precio": 600
         },
         {
-          "id": 7,
-          "room": "1501",
+          
+          "id": "1501",
           "cantPersonas": 4,
-          "Nombre": "Camarotes Exclusivos",
+          "nombre": "Camarotes Exclusivos",
           "descripcion": "Con dos camarotes de alta calidad, esta habitación está pensada para quienes desean una estancia más cómoda y exclusiva. Incluye minibar con bebidas selectas y un jacuzzi privado para un descanso completo después de un día de actividades. Ideal para quienes buscan una experiencia más lujosa.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
-            " https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
             "https://media.traveler.es/photos/6137710dc4f3d95786668b1b/master/w_320%2Cc_limit/42765.jpg",
             "https://cdn.pixabay.com/photo/2016/03/12/17/35/jacuzzi-1252474_960_720.jpg",
@@ -1064,19 +1063,18 @@
           "precio": 800
         },
         {
-          "id": 8,
-          "room": "1502",
+          
+          "id": "1502",
           "cantPersonas": 4,
-          "Nombre": "Camarotes Exclusivos",
+          "nombre": "Camarotes Exclusivos",
           "descripcion": "Con dos camarotes de alta calidad, esta habitación está pensada para quienes desean una estancia más cómoda y exclusiva. Incluye minibar con bebidas selectas y un jacuzzi privado para un descanso completo después de un día de actividades. Ideal para quienes buscan una experiencia más lujosa.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
-            " https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
             "https://media.traveler.es/photos/6137710dc4f3d95786668b1b/master/w_320%2Cc_limit/42765.jpg",
             "https://cdn.pixabay.com/photo/2016/03/12/17/35/jacuzzi-1252474_960_720.jpg",
@@ -1085,19 +1083,18 @@
           "precio": 800
         },
         {
-          "id": 9,
-          "room": "1503",
+          
+          "id": "1503",
           "cantPersonas": 4,
-          "Nombre": "Camarotes Exclusivos",
+          "nombre": "Camarotes Exclusivos",
           "descripcion": "Con dos camarotes de alta calidad, esta habitación está pensada para quienes desean una estancia más cómoda y exclusiva. Incluye minibar con bebidas selectas y un jacuzzi privado para un descanso completo después de un día de actividades. Ideal para quienes buscan una experiencia más lujosa.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
-            " https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
             "https://media.traveler.es/photos/6137710dc4f3d95786668b1b/master/w_320%2Cc_limit/42765.jpg",
             "https://cdn.pixabay.com/photo/2016/03/12/17/35/jacuzzi-1252474_960_720.jpg",
@@ -1106,19 +1103,18 @@
           "precio": 800
         },
         {
-          "id": 10,
-          "room": "1504",
+          
+          "id": "1504",
           "cantPersonas": 4,
-          "Nombre": "Camarotes Exclusivos",
+          "nombre": "Camarotes Exclusivos",
           "descripcion": "Con dos camarotes de alta calidad, esta habitación está pensada para quienes desean una estancia más cómoda y exclusiva. Incluye minibar con bebidas selectas y un jacuzzi privado para un descanso completo después de un día de actividades. Ideal para quienes buscan una experiencia más lujosa.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
-            " https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
             "https://media.traveler.es/photos/6137710dc4f3d95786668b1b/master/w_320%2Cc_limit/42765.jpg",
             "https://cdn.pixabay.com/photo/2016/03/12/17/35/jacuzzi-1252474_960_720.jpg",
@@ -1127,19 +1123,18 @@
           "precio": 800
         },
         {
-          "id": 11,
-          "room": "1505",
+          
+          "id": "1505",
           "cantPersonas": 4,
-          "Nombre": "Camarotes Exclusivos",
+          "nombre": "Camarotes Exclusivos",
           "descripcion": "Con dos camarotes de alta calidad, esta habitación está pensada para quienes desean una estancia más cómoda y exclusiva. Incluye minibar con bebidas selectas y un jacuzzi privado para un descanso completo después de un día de actividades. Ideal para quienes buscan una experiencia más lujosa.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
-            " https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
             "https://media.traveler.es/photos/6137710dc4f3d95786668b1b/master/w_320%2Cc_limit/42765.jpg",
             "https://cdn.pixabay.com/photo/2016/03/12/17/35/jacuzzi-1252474_960_720.jpg",
@@ -1148,19 +1143,18 @@
           "precio": 800
         },
         {
-          "id": 12,
-          "room": "1506",
+          
+          "id": "1506",
           "cantPersonas": 4,
-          "Nombre": "Camarotes Exclusivos",
+          "nombre": "Camarotes Exclusivos",
           "descripcion": "Con dos camarotes de alta calidad, esta habitación está pensada para quienes desean una estancia más cómoda y exclusiva. Incluye minibar con bebidas selectas y un jacuzzi privado para un descanso completo después de un día de actividades. Ideal para quienes buscan una experiencia más lujosa.",
           "internet": true,
           "minibar": true,
           "jacuzzi": true,
           "reserva": true,
-          "tipoRoom": "delux",
+          "tipoRoom": "Deluxe",
           "imagenes": [
             "https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
-            " https://mueblesdiversos.com/wp-content/uploads/2021/08/CAMAROTE-BONANZA-1.40m-CG-RUBY-3-1024x1024.jpg",
             "https://imagenes.eltiempo.com/files/image_414_314/uploads/2018/04/06/5ac7f005af11a.jpeg",
             "https://media.traveler.es/photos/6137710dc4f3d95786668b1b/master/w_320%2Cc_limit/42765.jpg",
             "https://cdn.pixabay.com/photo/2016/03/12/17/35/jacuzzi-1252474_960_720.jpg",

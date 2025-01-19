@@ -1,14 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel El Rincón de Carmen</title>
-    <link rel="stylesheet" href="/style/index.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-   
-    
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel El Rincón de Carmen</title>
+  <link rel="stylesheet" href="/style/habitaciones.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+  <header class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 ">
+    <!-- Menú de registro (SVG de usuario) -->
+    <div id="userMovil" class="movile-login md:hidden relative">
+      <button id="login-toggle" class="text-gray-200 focus:outline-none text-2xl">
+        <!-- SVG de usuario -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-6 h-6">
+          <path
+            d="M12 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM4 20c0-3.308 2.692-6 6-6h4c3.308 0 6 2.692 6 6 0 1.104-.896 2-2 2H6c-1.104 0-2-.896-2-2zm2 0h12c0-2.206-1.794-4-4-4h-4c-2.206 0-4 1.794-4 4z" />
+        </svg>
+      </button>
+      <div id="login-content"
+        class="hidden absolute top-12 left-0 flex flex-col gap-2 bg-teal-800 p-4 rounded-md shadow-lg">
+        <button id="open-login-modal" class="login-btn">Iniciar Sesión</button>
+        <button class="login-btn" id="register-movile">Registrarse</button>
+      </div>
+    </div>
+
+    <!-- Menú de navegación (☰) -->
+    <div class="movile-menu md:hidden relative">
+      <button id="menu-toggle" class="text-gray-200 focus:outline-none text-2xl">☰</button>
+      <div id="menu-content"
+        class="hidden absolute top-12 left-0 flex flex-col gap-4 bg-teal-800 p-4 rounded-md shadow-lg">
+        <ul class="menu-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="/page/habitaciones.html">Habitaciones</a></li>
+          <li><a href="/page/contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Menú de registro y navegación para escritorio -->
+    <div id="userDesktop" class="hidden md:flex flex-col gap-2 login">
+      <button id="open-login-modal-desktop" class="login-btn">Iniciar Sesión</button>
+      <button class="login-btn" id="register-desktop">Registrarse</button>
+    </div>
+
+    <div class="navegacion hidden md:flex">
+      <ul class="flex gap-8 font-semibold menu-list">
+        <li><a href="/index.html" class="hover:text-gray-100">Inicio</a></li>
+        <li><a href="/page/habitaciones.html" class="hover:text-gray-100">Habitaciones</a></li>
+        <li><a href="/page/contacto.html" class="hover:text-gray-100">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <!-- Título y logo -->
+    <div class="flex items-center">
+      <div class="title flex">
+        <h1 class="text-gold font-bold text-lg">
+          Hotel El Rincón de <br />Carmen
+        </h1>
+        <img src="/img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.svg" alt="Logo" class="w-20 h-18" />
+      </div>
+    </div>
+  </header>
+
+  <div class="filters relative flex flex-col md:flex-row md:space-x-4 md:justify-center pt-32 md:p-8 md:top-32   rounded-md">
+    <!-- Filtro por tipo de cuarto -->
+    <select id="tipoCuarto" class="p-2 mb-4 md:mb-0 flex text-center w-full md:w-auto">
+      <option value="">Selecciona un tipo de cuarto</option>
+      <option value="Clásica">Clásica</option>
+      <option value="Deluxe">Deluxe</option>
+    </select>
+  
+    <!-- Filtro por cantidad de personas -->
+    <select id="capacidad" class="p-2 mb-4 md:mb-0 flex text-center w-full md:w-auto">
+      <option value="">Selecciona una capacidad</option>
+      <option value="1">1 persona</option>
+      <option value="2">2 personas</option>
+      <option value="4">4 personas</option>
+    </select>
+  
+    <!-- Filtro por precio -->
+    <select id="precio" class="p-2 mb-4 md:mb-0 flex text-center w-full md:w-auto">
+      <option value="">Ordenar por precio</option>
+      <option value="asc">Menor a mayor</option>
+      <option value="desc">Mayor a menor</option>
+    </select>
+</div>
+
+
+  <main class="pt-32 px-4 md:px-32">
+    <h2 class="text-xl font-bold mb-4 mt-3">Habitaciones disponibles</h2>
+    <div id="tarjetaCuartos" class="flex colum flex-col  gap-8  bg-beige border-2 border-black p-4 rounded-md">
+      
+      
+    </div>
+  </main>
+
+  <!-- Modal Login Móvil -->
+  <dialog id="modalLogin" class="p-6 bg-white rounded-lg shadow-lg w-full max-w-md mx-auto">
+    <form id="logMovil" class="space-y-4">
+      <label for="emailLogin" class="block text-sm font-medium text-gray-700">Correo electrónico:</label>
+      <input type="email" name="emailLogin" id="emailLogin" placeholder="Ingrese tu Email aquí" required
+        class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+
+      <label for="password" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+      <input type="password" name="passwordLogin" id="passwordLogin" placeholder="Ingrese tu contraseña aquí" required
+        class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+
+      <button type="submit"
+        class="w-full bg-teal-900 text-white p-2 rounded-lg text-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+        Iniciar Sesión
+      </button>
+
+      <p class="text-center text-sm text-gray-600"><a href="/Page/registro.html"
+          class="text-indigo-600 hover:underline">Regístrate aquí.</a></p>
+    </form>
+    <div id="error-message" class="text-red-500 text-sm text-center hidden mt-3">
+      Usuario o contraseña incorrectos.
+    </div>
+  </dialog>
+
+  <!-- Modal para escritorio -->
+  <dialog id="modalLoginDesktop" class="p-6 bg-white rounded-lg shadow-lg w-full max-w-md mx-auto">
+    <form id="LoginDesktop" class="space-y-4">
+      <label for="emailLoginDesktop" class="block text-sm font-medium text-gray-700">Correo electrónico:</label>
+      <input type="email" name="emailLoginDesktop" id="emailLoginDesktop" placeholder="Ingrese tu Email aquí" required
+        class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+
+      <label for="password" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+      <input type="password" name="passwordLoginDesktop" id="passwordLoginDesktop"
+        placeholder="Ingrese tu contraseña aquí" required
+        class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+
+      <button type="submit" id="botonDesktop"
+        class="w-full bg-teal-900 text-white p-2 rounded-lg text-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+        Iniciar Sesión
+      </button>
+
+      <p class="text-center text-sm text-gray-600"><a href="/Page/registro.html"
+          class="text-indigo-600 hover:underline">Regístrate aquí.</a></p>
+    </form>
+    <div id="error-messageDesktop" class="text-red-500 text-sm text-center hidden mt-3">
+      Usuario o contraseña incorrectos.
+    </div>
+  </dialog>
+
+  <script src="/scripts/habitaciones.js"></script>
+
+</body>
+
 </html>

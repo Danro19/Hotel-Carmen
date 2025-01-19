@@ -11,7 +11,7 @@
   <body class="bg-white">
  <header class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50">
   <!-- Menú de registro (SVG de usuario) -->
-  <div class="mobile-login md:hidden relative">
+  <div id="userMovil"class="movile-login md:hidden relative">
     <button id="login-toggle" class="text-gray-200 focus:outline-none text-2xl">
       <!-- SVG de usuario -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-6 h-6">
@@ -25,7 +25,7 @@
   </div>
 
   <!-- Menú de navegación (☰) -->
-  <div class="mobile-menu md:hidden relative">
+  <div class="movile-menu md:hidden relative">
     <button id="menu-toggle" class="text-gray-200 focus:outline-none text-2xl">☰</button>
     <div id="menu-content" class="hidden absolute top-12 left-0 flex flex-col gap-4 bg-teal-800 p-4 rounded-md shadow-lg">
       <ul class="menu-list">
@@ -37,7 +37,7 @@
   </div>
 
   <!-- Menú de registro y navegación para escritorio -->
-  <div class="hidden md:flex flex-col gap-2 login">
+  <div id="userDesktop"class="hidden md:flex flex-col gap-2 login">
     <button id="open-login-modal-desktop" class="login-btn">Iniciar Sesión</button>
     <button class="login-btn" id="register-desktop">Registrarse</button>
   </div>
@@ -386,18 +386,45 @@
 <!-- Cosas importantes para el modal
 en movil el id es id:"open-login-modal"=es para movil 
 el id:"open-login-modal-desktop"= es para escritorio-->
-<dialog id="modalLogin">
-  <form id="logMovil">
-    <label for="user"> Correo electrónico: </label>
-    <input type="email" name="emailLogin" id="emailLogin" placeholder="Ingrese tu Email aqui" required><br>
-    <label for="password">Contraseña:</label>
-    <input type="password" name="passwordLogin" id="passwordLogin" placeholder="Ingrese tu contraseña aqui" required><br>
-    <button type="submit">Iniciar Sesion</button>
-    <p><a href="/Page/registro.html">Registrate Aqui.</a></p>
+<!-- Modal para móvil -->
+<dialog id="modalLogin" class="p-6 bg-white rounded-lg shadow-lg w-full max-w-md mx-auto">
+  <form id="logMovil" class="space-y-4">
+    <label for="emailLogin" class="block text-sm font-medium text-gray-700">Correo electrónico:</label>
+    <input type="email" name="emailLogin" id="emailLogin" placeholder="Ingrese tu Email aquí" required class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+
+    <label for="password" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+    <input type="password" name="passwordLogin" id="passwordLogin" placeholder="Ingrese tu contraseña aquí" required class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+
+    <button type="submit" class="w-full bg-teal-900 text-white p-2 rounded-lg text-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+      Iniciar Sesión
+    </button>
+    
+    <p class="text-center text-sm text-gray-600"><a href="/Page/registro.html" class="text-indigo-600 hover:underline">Regístrate aquí.</a></p>
   </form>
-  <div id="error-message" style="color: red; display: none;">Usuario o contraseña incorrectos.</div>
+  <div id="error-message" class="text-red-500 text-sm text-center hidden mt-3">
+    Usuario o contraseña incorrectos.
+  </div>
 </dialog>
 
+<!-- Modal para escritorio -->
+<dialog id="modalLoginDesktop" class="p-6 bg-white rounded-lg shadow-lg w-full max-w-md mx-auto">
+  <form id="LoginDesktop" class="space-y-4">
+    <label for="emailLoginDesktop" class="block text-sm font-medium text-gray-700">Correo electrónico:</label>
+    <input type="email" name="emailLoginDesktop" id="emailLoginDesktop" placeholder="Ingrese tu Email aquí" required class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+
+    <label for="password" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+    <input type="password" name="passwordLoginDesktop" id="passwordLoginDesktop" placeholder="Ingrese tu contraseña aquí" required class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+
+    <button type="submit" id="botonDesktop" class="w-full bg-teal-900 text-white p-2 rounded-lg text-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+      Iniciar Sesión
+    </button>
+    
+    <p class="text-center text-sm text-gray-600"><a href="/Page/registro.html" class="text-indigo-600 hover:underline">Regístrate aquí.</a></p>
+  </form>
+  <div id="error-messageDesktop" class="text-red-500 text-sm text-center hidden mt-3">
+    Usuario o contraseña incorrectos.
+  </div>
+</dialog>
   </body>
 
   <script src="scripts/index.js"></script>

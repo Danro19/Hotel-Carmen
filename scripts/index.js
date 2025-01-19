@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Aquí va tu código
+
+
+
+
 //carrucel uno
 const carouselContainerUno = document.getElementById("carousel-container");
 const leftButtonUno = document.getElementById("left");
@@ -103,8 +109,8 @@ function updateCarousel() {
 
 
 
-
-document.getElementById('login-toggle').addEventListener('click', (event) => {
+if (document.getElementById("login-toggle" && "login-content")) {
+  document.getElementById('login-toggle').addEventListener('click', (event) => {
     const loginContent = document.getElementById('login-content');
     const menuContent = document.getElementById('menu-content');
     
@@ -116,8 +122,7 @@ document.getElementById('login-toggle').addEventListener('click', (event) => {
     // Alternar el menú de registro
     loginContent.classList.toggle('hidden');
     event.stopPropagation(); // Evitar que el clic cierre el menú inmediatamente
-  });
-  // Alternar el menú de navegación
+    // Alternar el menú de navegación
   document.getElementById('menu-toggle').addEventListener('click', (event) => {
     const menuContent = document.getElementById('menu-content');
     const loginContent = document.getElementById('login-content');
@@ -150,6 +155,13 @@ document.getElementById('login-toggle').addEventListener('click', (event) => {
       menuContent.classList.add('hidden');
     }
   });
+
+  });
+}
+
+
+  
+
   document.getElementById("register-movile").addEventListener("click", () => {
     // Redirigir a la página de registro
     window.location.href = "/Page/registro.html"; // Reemplaza con la URL de la página de registro
@@ -160,76 +172,97 @@ document.getElementById('login-toggle').addEventListener('click', (event) => {
   });
   
   
-// Modal Login
 
-const loginMovil = document.getElementById("open-login-modal")
-const loginDesktop = document.getElementById("open-login-modal-desktop")
-const modalLogin = document.getElementById("modalLogin")
-const registro =document.getElementById("logMovil")
+  // Función de login
+  const login = async (email, password, modal) => {
+    try {
+      const response = await fetch('http://localhost:3000/usuarios');
+      const users = await response.json();
+      const user = users.find((u) => u.email === email);
 
-loginMovil.addEventListener("click",()=> modalLogin.showModal())
+      if (!user) {
+        throw new Error('Usuario no encontrado');
+      }
 
-addEventListener("submit",()=>{
-  registro.close();
-})
+      if (user.password !== password) {
+        throw new Error('Contraseña incorrecta');
+      }
 
-document.addEventListener('click', (event) => {
-    const loginContent = document.getElementById('login-content');
-    loginContent.classList.toggle("hidden");
-  })
+      alert('¡Ingreso exitoso!');
+      modal.close();
+      localStorage.setItem('user', JSON.stringify(user));
+      window.location.reload();
+      // Guardamos al usuario en el localStorage
+    } catch (error) {
+      document.getElementById('error-message').innerText = error.message;
+      document.getElementById('error-message').style.display = 'block';
+    }
+  };
 
-  modalLogin.addEventListener("click", (event) => {
+  // Modal móvil
+  const loginMovil = document.getElementById('open-login-modal');
+  const modalLogin = document.getElementById('modalLogin');
+
+  loginMovil.addEventListener('click', () => modalLogin.showModal());
+
+  modalLogin.addEventListener('click', (event) => {
     if (event.target === modalLogin) {
-      modalLogin.close(); // Cierra el modal si se hace clic fuera de él
+      modalLogin.close();
     }
   });
 
+  // Enviar formulario de login móvil
+  document.getElementById('logMovil').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const email = document.getElementById('emailLogin').value;
+    const password = document.getElementById('passwordLogin').value;
+    await login(email, password, modalLogin);
+  });
 
-  // verificacion de usuario
+  // Modal escritorio
+  const loginDesktop = document.getElementById('open-login-modal-desktop');
+  const modalLoginDesktop = document.getElementById('modalLoginDesktop');
 
-  document
-    .getElementById("logMovil")
-    .addEventListener("submit", async function (e) {
-      e.preventDefault(); // Prevenir la recarga de la página al enviar el formulario
+  loginDesktop.addEventListener('click', () => modalLoginDesktop.showModal());
 
-      // Obtener los valores de correo y contraseña del formulario
-      const email = document.getElementById("emailLogin").value;
-      const password = document.getElementById("passwordLogin").value;
+  modalLoginDesktop.addEventListener('click', (event) => {
+    if (event.target === modalLoginDesktop) {
+      modalLoginDesktop.close();
+    }
+  });
 
-      try {
-        // Hacer una solicitud GET a la API de JSON Server para obtener los usuarios
-        const response = await fetch("http://localhost:3000/usuarios");
-        const users = await response.json();
+  // Enviar formulario de login escritorio
+  document.getElementById('LoginDesktop').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const email = document.getElementById('emailLoginDesktop').value;
+    const password = document.getElementById('passwordLoginDesktop').value;
+    await login(email, password, modalLoginDesktop);
+    
+  });
+  
+  window.addEventListener("load", () => {
+    const user = JSON.parse(localStorage.getItem("user"));
 
-        // Buscar al usuario por su correo electrónico
-        const user = users.find((u) => u.email === email);
+    if (user) {
+      
+      // Si existe un usuario, mostrar su nombre
+      const userMovil = document.getElementById("userMovil");
+      const userDesktop = document.getElementById("userDesktop");
+      userDesktop.innerHTML = `${user.name} <br><button id="salirD" class="bg-teal-700 text-white text-sm font-semibold py-1 px-3 rounded-lg hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50">Salir</button>`;
+      userMovil.innerHTML = `${user.name} <br><button id="salirM" class="bg-teal-700 text-white text-sm font-semibold py-1 px-3 rounded-lg hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50">Salir</button>`;
+      const salirM = document.getElementById("salirM");
+      const salirD = document.getElementById("salirD");
+      salirM.addEventListener("click", () => {
+        localStorage.clear();  // Borra todos los datos del localStorage
+        alert("Se ha cerrado sesión");
+        window.location.reload();  
+      });
+      salirD.addEventListener("click", () => {
+        localStorage.clear();  // Borra todos los datos del localStorage
+        alert("Se ha cerrado sesión");
+        window.location.reload();
+      
+    })
+  }});
 
-        if (!user) {
-          // Si el usuario no existe, mostrar un mensaje de error
-          document.getElementById("error-message").innerText =
-            "Usuario no encontrado";
-          document.getElementById("error-message").style.display = "block";
-          return;
-        }
-
-        // Verificar si la contraseña coincide
-        if (user.password !== password) {
-          // Si la contraseña no coincide, mostrar un mensaje de error
-          document.getElementById("error-message").innerText =
-            "Contraseña incorrecta";
-          document.getElementById("error-message").style.display = "block";
-          return;
-        }
-
-        // Si todo es correcto, mostrar un mensaje de éxito
-        alert("¡Ingreso exitoso!");
-
-        // Cerrar el modal (si es necesario)
-        document.getElementById("modalLogin").close();
-      } catch (error) {
-        console.error("Error al verificar las credenciales:", error);
-        document.getElementById("error-message").innerText =
-          "Ocurrió un error. Intenta nuevamente.";
-        document.getElementById("error-message").style.display = "block";
-      }
-    });
+});

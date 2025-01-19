@@ -77,11 +77,13 @@ h1,h2,h3 {
 /* Botón de navegación izquierdo */
 .carousel-nav.left {
     left: 1rem;
+    top: 36.7vh;
 }
 
 /* Botón de navegación derecho */
 .carousel-nav.right {
     right: 1rem;
+    top: 36.7vh;
 }
 
 /* Contenedor de las imágenes */
@@ -204,10 +206,10 @@ img{
 }
 
 #rightDos{
-    top:  5vh;
+    top:  8vh;
 }
 #leftDos{
-    top: 5vh;
+    top: 8vh;
 }
 .introduccion p{
     padding: 10vh;

@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-white">
-  <header class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50">
+  <header class="fixed b-10 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50">
     <!-- Menú de registro (SVG de usuario) -->
     <div id="userMovil" class="movile-login md:hidden relative">
       <button id="login-toggle" class="text-gray-200 focus:outline-none text-2xl">
@@ -65,7 +65,7 @@
     </div>
   </header>
   
-  <div class="filters relative flex flex-col top-28 md:flex-col md:space-x-4 md:justify-center pt-32 md:p-8 md:top-32   rounded-md">
+  <div class="filters relative flex flex-col  md:flex-col md:space-x-4 md:justify-center pt-32 md:p-8 md:top-20   rounded-md">
     <div class="flex items-center justify-center gap-4 flex-col md:flex-row md:gap-8 md:justify-center">
     <!--Filtro por fecha-->
     <label >Fecha de llegada</label>
@@ -99,7 +99,7 @@
 </div>
 
 
-  <main class="pt-32 px-4 md:px-32">
+  <main class=" px-4 md:px-32">
     <h2 class="text-xl font-bold mb-4 mt-3">Habitaciones disponibles</h2>
     <div id="tarjetaCuartos" class="flex colum flex-col  gap-8  bg-beige border-2 border-black p-4 rounded-md">
       <div id="habitacionesContainer">
@@ -177,6 +177,23 @@
         ></path>
       </svg>
     </a>
+    <!-- Botón flotante -->
+<button id="reservas-boton" class="fixed bottom-5 right-5 bg-teal-600 p-3 rounded-full shadow-lg">
+  <!-- Ícono SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-6 h-6">
+    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+  </svg>
+</button>
+
+<!-- Modal de reservas -->
+<div id="reservas-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+  <div class="bg-white p-5 rounded-md w-80">
+    <h2 class="text-lg font-bold mb-4">Tus Reservas</h2>
+    <ul id="reservas-lista" class="space-y-2"></ul>
+    <button id="cerrar-modal" class="mt-4 w-full bg-teal-900 text-white py-2 rounded-md">Cerrar</button>
+  </div>
+</div>
+
 
     <footer class="bg-teal-900 text-white py-8">
       <div class="container mx-auto px-4">

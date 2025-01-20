@@ -17,7 +17,10 @@
       ],
       "precio": 300,
       "fechaReserva": [
-        
+        [
+          "2025-01-21",
+          "2025-01-22"
+        ]
       ]
     },
     {
@@ -36,9 +39,7 @@
         "https://hotelparque97.com/wp-content/uploads/2024/10/sala-tayrona-parque-97-hotel-605x465.jpg"
       ],
       "precio": 300,
-      "fechaReserva": [
-       
-      ]
+      "fechaReserva": []
     },
     {
       "id": "203",
@@ -56,9 +57,7 @@
         "https://hotelparque97.com/wp-content/uploads/2024/10/sala-tayrona-parque-97-hotel-605x465.jpg"
       ],
       "precio": 300,
-      "fechaReserva": [
-       
-      ]
+      "fechaReserva": []
     },
     {
       "id": "204",
@@ -76,9 +75,7 @@
         "https://www.livitum.com/blogs/9/1/2/tx_092ceaab-dc0f-4745-882b-e25ea35bc254_dormitorios_multifuncionales.jpg"
       ],
       "precio": 300,
-      "fechaReserva": [
-        
-      ]
+      "fechaReserva": []
     },
     {
       "id": "205",
@@ -96,9 +93,7 @@
         "https://www.livitum.com/blogs/9/1/2/tx_092ceaab-dc0f-4745-882b-e25ea35bc254_dormitorios_multifuncionales.jpg"
       ],
       "precio": 300,
-      "fechaReserva": [
-        
-      ]
+      "fechaReserva": []
     },
     {
       "id": "206",
@@ -116,9 +111,7 @@
         "https://www.livitum.com/blogs/9/1/2/tx_092ceaab-dc0f-4745-882b-e25ea35bc254_dormitorios_multifuncionales.jpg"
       ],
       "precio": 300,
-      "fechaReserva": [
-      
-      ]
+      "fechaReserva": []
     },
     {
       "id": "1201",
@@ -137,9 +130,7 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUylxP_ix3Cqb6f8PFAuzDwTkkOFeZiCHd_w&s"
       ],
       "precio": 450,
-      "fechaReserva": [
-        
-      ]
+      "fechaReserva": []
     },
     {
       "id": "1202",
@@ -244,7 +235,7 @@
       "internet": true,
       "minibar": false,
       "jacuzzi": false,
-      "reserva": true,
+      "reserva": false,
       "tipoRoom": "Clásica",
       "imagenes": [
         "https://cdn.prod.website-files.com/5fd2691417e7999c4c5295a4/64a875880a51b4dc90112bf1_presidencial%20suite%20el%20cielo%20hotel.jpg",
@@ -252,7 +243,12 @@
         "https://previews.123rf.com/images/nadtochiy/nadtochiy1703/nadtochiy170300188/86751742-sala-de-estar-en-el-apartamento-o-en-la-habitaci%C3%B3n-de-hotel.jpg"
       ],
       "precio": 400,
-      "fechaReserva": []
+      "fechaReserva": [
+        [
+          "2025-01-21",
+          "2025-01-23"
+        ]
+      ]
     },
     {
       "id": "302",
@@ -1175,7 +1171,9 @@
       "fechaNacimiento": "2002-11-19",
       "password": "123456",
       "confirm_password": "123456",
-      "id": 1
+      "id": 1,
+      "reservas": [],
+      "fechaReservaUsuario": []
     },
     {
       "name": "Daniel Rodriguez",
@@ -1203,6 +1201,17 @@
       "password": "123",
       "confirm_password": "123",
       "id": 4
+    },
+    {
+      "name": "pepito perez",
+      "email": "dsakldslkakjdsa@gmail.com",
+      "phone": "31254564879",
+      "fechaNacimiento": "2003-11-30",
+      "password": "123456",
+      "confirm_password": "123456",
+      "id": 5,
+      "reservas": [],
+      "fechaReservaUsuario": []
     }
   ],
   "reservas": []

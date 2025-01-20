@@ -2,13 +2,14 @@ document.getElementById('login-toggle').addEventListener('click', (event) => {
   const loginContent = document.getElementById('login-content');
   const menuContent = document.getElementById('menu-content');
 
-  // Si el menú de navegación está abierto, cerrarlo
-  if (!menuContent.classList.contains('hidden')) {
+  if (menuContent && !menuContent.classList.contains('hidden')) {
     menuContent.classList.add('hidden');
   }
 
-  // Alternar el menú de registro
-  loginContent.classList.toggle('hidden');
+  if (loginContent) {
+    loginContent.classList.toggle('hidden');
+  }
+
   event.stopPropagation(); // Evitar que el clic cierre el menú inmediatamente
 });
 
@@ -17,13 +18,14 @@ document.getElementById('menu-toggle').addEventListener('click', (event) => {
   const menuContent = document.getElementById('menu-content');
   const loginContent = document.getElementById('login-content');
 
-  // Si el menú de registro está abierto, cerrarlo
-  if (!loginContent.classList.contains('hidden')) {
+  if (loginContent && !loginContent.classList.contains('hidden')) {
     loginContent.classList.add('hidden');
   }
 
-  // Alternar el menú de navegación
-  menuContent.classList.toggle('hidden');
+  if (menuContent) {
+    menuContent.classList.toggle('hidden');
+  }
+
   event.stopPropagation(); // Evitar que el clic cierre el menú inmediatamente
 });
 
@@ -32,20 +34,23 @@ document.addEventListener('click', (event) => {
   const loginContent = document.getElementById('login-content');
   const menuContent = document.getElementById('menu-content');
 
-  // Si clic en fuera de ambos menús, cerrarlos
   if (
+    loginContent &&
     !loginContent.contains(event.target) &&
     !document.getElementById('login-toggle').contains(event.target)
   ) {
     loginContent.classList.add('hidden');
   }
+
   if (
+    menuContent &&
     !menuContent.contains(event.target) &&
     !document.getElementById('menu-toggle').contains(event.target)
   ) {
     menuContent.classList.add('hidden');
   }
 });
+
 
 
 // Redirección al registro
@@ -222,18 +227,25 @@ function crearModal(habitacion) {
     e.preventDefault();
     const fechaInicio = fechaInicioInput.value;
     const fechaFin = fechaFinInput.value;
-
+  
     if (!fechaInicio || !fechaFin) {
       alert("Por favor, selecciona las fechas.");
       return;
     }
-
+  
     if (new Date(fechaFin) < new Date(fechaInicio)) {
       alert("La fecha de fin no puede ser anterior a la fecha de inicio.");
       return;
     }
-
-    // Realizar la solicitud PATCH a la API
+  
+    // Obtener el usuario del localStorage
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (!user) {
+      alert("No se encontró el usuario. Por favor, inicia sesión.");
+      return;
+    }
+  
+    // Realizar la solicitud PATCH a la API para actualizar la habitación
     try {
       const response = await fetch(`http://localhost:3000/habitaciones/${idHabitacion}`, {
         method: "PATCH",
@@ -245,22 +257,41 @@ function crearModal(habitacion) {
           reserva: false, // Asegúrate de que esto es lo que necesitas
         }),
       });
-
+  
       if (!response.ok) {
         throw new Error("Error al actualizar la reserva.");
       }
-      
+  
       // Mostrar la respuesta de la API en consola para ver el estado
-      console.log(await response.json());
-      
+      const habitacionActualizada = await response.json();
+      console.log(habitacionActualizada);
+  
+      // Actualizar la información del usuario con la reserva
+      const userUpdateResponse = await fetch(`http://localhost:3000/usuarios/${user.id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          reservas: [...(user.reservas || []), idHabitacion], // Agregar idHabitacion al array de reservas
+          fechaReservaUsuario: [...(user.fechaReservaUsuario || []), [fechaInicio, fechaFin]], // Agregar las fechas
+        }),
+      });
+  
+      if (!userUpdateResponse.ok) {
+        throw new Error("Error al actualizar las reservas del usuario.");
+      }
+  
+      console.log(await userUpdateResponse.json());
+  
       // Informar al usuario
-      alert(`Reserva confirmada para ${habitacion.nombre} del ${fechaInicio} al ${fechaFin}
-        *IMPORTANTE Check-in/check-out**: La hora de Check-in de las habitaciones será a las 14:00 del día. Si el usuario no hace efectiva la reserva dos horas después de que inicie el check in (16:00) la habitación
-          quedará disponible para que otra persona la pueda tomar.`);
-      
+      alert(`Reserva confirmada para ${habitacionActualizada.nombre} del ${fechaInicio} al ${fechaFin}.
+        *IMPORTANTE Check-in/check-out*: La hora de Check-in de las habitaciones será a las 14:00 del día. Si el usuario no hace efectiva la reserva dos horas después de que inicie el check in (16:00), la habitación
+        quedará disponible para que otra persona la pueda tomar.`);
+  
       // Cerrar el modal sin actualizar la página
       document.body.removeChild(modal);
-
+  
     } catch (error) {
       alert("Hubo un error al procesar la reserva. Inténtalo de nuevo más tarde.");
       console.error(error);
@@ -449,3 +480,112 @@ function crearModal(habitacion) {
         input.addEventListener("change", filtrarHabitaciones);
       });
   })
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const reservasBoton = document.getElementById("reservas-boton");
+    const reservasModal = document.getElementById("reservas-modal");
+    const cerrarModal = document.getElementById("cerrar-modal");
+    const reservasLista = document.getElementById("reservas-lista");
+  
+    // Abrir el modal al hacer clic en el botón
+    reservasBoton.addEventListener("click", async () => {
+      try {
+        // Obtener el usuario desde el localStorage para usar su ID
+        const user = JSON.parse(localStorage.getItem("user"));
+        if (!user) {
+          alert("No se encontró el usuario. Por favor, inicia sesión.");
+          return;
+        }
+  
+        // Consultar al API para obtener los datos actualizados del usuario
+        const response = await fetch(`http://localhost:3000/usuarios/${user.id}`);
+        if (!response.ok) {
+          throw new Error("Error al obtener los datos del usuario.");
+        }
+  
+        const usuarioActualizado = await response.json();
+  
+        // Limpiar la lista de reservas antes de llenarla
+        reservasLista.innerHTML = "";
+  
+        // Crear elementos de la lista con las reservas
+        usuarioActualizado.reservas.forEach((habitacionId, index) => {
+          const li = document.createElement("li");
+          li.classList.add("flex", "justify-between", "items-center");
+  
+          // Mostrar la información de la reserva
+          li.innerHTML = `
+            <span>Habitación ${habitacionId}: ${usuarioActualizado.fechaReservaUsuario[index].join(" al ")}</span>
+            <button data-index="${index}" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm eliminar-reserva">
+              Cancelar Reservacion
+            </button>
+          `;
+  
+          reservasLista.appendChild(li);
+        });
+  
+        reservasModal.classList.remove("hidden");
+      } catch (error) {
+        console.error(error);
+        alert("No se pudieron cargar las reservas. Intenta de nuevo más tarde.");
+      }
+    });
+  
+    // Cerrar el modal
+    cerrarModal.addEventListener("click", () => {
+      reservasModal.classList.add("hidden");
+    });
+  
+    // Eliminar una reserva
+    reservasLista.addEventListener("click", async (e) => {
+      if (e.target.classList.contains("eliminar-reserva")) {
+        try {
+          // Obtener el índice de la reserva seleccionada
+          const index = e.target.getAttribute("data-index");
+  
+          // Obtener el usuario desde el localStorage para usar su ID
+          const user = JSON.parse(localStorage.getItem("user"));
+          if (!user) {
+            alert("No se encontró el usuario. Por favor, inicia sesión.");
+            return;
+          }
+  
+          // Consultar al API para obtener los datos actualizados del usuario
+          const response = await fetch(`http://localhost:3000/usuarios/${user.id}`);
+          if (!response.ok) {
+            throw new Error("Error al obtener los datos del usuario.");
+          }
+  
+          const usuarioActualizado = await response.json();
+  
+          // Actualizar las reservas y las fechas en el usuario
+          usuarioActualizado.reservas.splice(index, 1);
+          usuarioActualizado.fechaReservaUsuario.splice(index, 1);
+  
+          // Enviar los datos actualizados al API
+          const updateResponse = await fetch(`http://localhost:3000/usuarios/${user.id}`, {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              reservas: usuarioActualizado.reservas,
+              fechaReservaUsuario: usuarioActualizado.fechaReservaUsuario,
+            }),
+          });
+  
+          if (!updateResponse.ok) {
+            throw new Error("Error al actualizar las reservas del usuario.");
+          }
+  
+          // Actualizar la lista de reservas en el modal
+          e.target.parentElement.remove();
+          alert("Reserva eliminada exitosamente.");
+        } catch (error) {
+          console.error(error);
+          alert("No se pudo eliminar la reserva. Intenta de nuevo más tarde.");
+        }
+      }
+    });
+  });
+  

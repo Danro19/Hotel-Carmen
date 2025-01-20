@@ -93,3 +93,14 @@ h1,h2,h3 {
     padding: 2vw;
 }
 
+/* Botón flotante */
+#reservas-boton {
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Modal de reservas */
+  #reservas-modal {
+    z-index: 1001;
+  }
+  

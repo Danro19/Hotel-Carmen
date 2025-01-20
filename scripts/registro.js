@@ -91,7 +91,7 @@ const Alldatos = (event ) => {
 const postData = async (nuevoUsuario) => {
     
     try{
-        const response = await fetch ("http://localhost:3000/usuarios", {
+        const response = await fetch ("https://json-server-1-m5tg.onrender.com/usuarios", {
             method: "POST",
             headers:{"Content-Type": "application/json"},
             body: JSON.stringify(nuevoUsuario)

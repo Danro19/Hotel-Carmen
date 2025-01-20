@@ -179,7 +179,7 @@ document.addEventListener('click', (event) => {
   // Función de login
   const login = async (email, password, modal) => {
     try {
-      const response = await fetch('http://localhost:3000/usuarios');
+      const response = await fetch('https://json-server-1-m5tg.onrender.com/usuarios');
       const users = await response.json();
       const user = users.find((u) => u.email === email);
 

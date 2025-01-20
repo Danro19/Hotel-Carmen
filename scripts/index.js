@@ -179,7 +179,7 @@ document.addEventListener('click', (event) => {
   // Función de login
   const login = async (email, password, modal) => {
     try {
-      const response = await fetch('http://localhost:3000/usuarios');
+      const response = await fetch('https://json-server-1-m5tg.onrender.com/usuarios');
       const users = await response.json();
       const user = users.find((u) => u.email === email);
 
@@ -268,4 +268,113 @@ document.addEventListener('click', (event) => {
     })
   }});
 
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const reservasBoton = document.getElementById("reservas-boton");
+  const reservasModal = document.getElementById("reservas-modal");
+  const cerrarModal = document.getElementById("cerrar-modal");
+  const reservasLista = document.getElementById("reservas-lista");
+
+  // Abrir el modal al hacer clic en el botón
+  reservasBoton.addEventListener("click", async () => {
+    try {
+      // Obtener el usuario desde el localStorage para usar su ID
+      const user = JSON.parse(localStorage.getItem("user"));
+      if (!user) {
+        alert("No se encontró el usuario. Por favor, inicia sesión.");
+        return;
+      }
+
+      // Consultar al API para obtener los datos actualizados del usuario
+      const response = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`);
+      if (!response.ok) {
+        throw new Error("Error al obtener los datos del usuario.");
+      }
+
+      const usuarioActualizado = await response.json();
+
+      // Limpiar la lista de reservas antes de llenarla
+      reservasLista.innerHTML = "";
+
+      // Crear elementos de la lista con las reservas
+      usuarioActualizado.reservas.forEach((habitacionId, index) => {
+        const li = document.createElement("li");
+        li.classList.add("flex", "justify-between", "items-center");
+
+        // Mostrar la información de la reserva
+        li.innerHTML = `
+          <span>Habitación ${habitacionId}: ${usuarioActualizado.fechaReservaUsuario[index].join(" al ")}</span>
+          <button data-index="${index}" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm eliminar-reserva">
+            Cancelar Reservacion
+          </button>
+        `;
+
+        reservasLista.appendChild(li);
+      });
+
+      reservasModal.classList.remove("hidden");
+    } catch (error) {
+      console.error(error);
+      alert("No se pudieron cargar las reservas. Intenta de nuevo más tarde.");
+    }
+  });
+
+  // Cerrar el modal
+  cerrarModal.addEventListener("click", () => {
+    reservasModal.classList.add("hidden");
+  });
+
+  // Eliminar una reserva
+  reservasLista.addEventListener("click", async (e) => {
+    if (e.target.classList.contains("eliminar-reserva")) {
+      try {
+        // Obtener el índice de la reserva seleccionada
+        const index = e.target.getAttribute("data-index");
+
+        // Obtener el usuario desde el localStorage para usar su ID
+        const user = JSON.parse(localStorage.getItem("user"));
+        if (!user) {
+          alert("No se encontró el usuario. Por favor, inicia sesión.");
+          return;
+        }
+
+        // Consultar al API para obtener los datos actualizados del usuario
+        const response = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`);
+        if (!response.ok) {
+          throw new Error("Error al obtener los datos del usuario.");
+        }
+
+        const usuarioActualizado = await response.json();
+
+        // Actualizar las reservas y las fechas en el usuario
+        usuarioActualizado.reservas.splice(index, 1);
+        usuarioActualizado.fechaReservaUsuario.splice(index, 1);
+
+        // Enviar los datos actualizados al API
+        const updateResponse = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            reservas: usuarioActualizado.reservas,
+            fechaReservaUsuario: usuarioActualizado.fechaReservaUsuario,
+          }),
+        });
+
+        if (!updateResponse.ok) {
+          throw new Error("Error al actualizar las reservas del usuario.");
+        }
+
+        // Actualizar la lista de reservas en el modal
+        e.target.parentElement.remove();
+        alert("Reserva eliminada exitosamente.");
+      } catch (error) {
+        console.error(error);
+        alert("No se pudo eliminar la reserva. Intenta de nuevo más tarde.");
+      }
+    }
+  });
 });

@@ -64,7 +64,7 @@ document.getElementById('register-desktop').addEventListener('click', () => {
 // Función de login
 const login = async (email, password, modal) => {
   try {
-    const response = await fetch('http://localhost:3000/usuarios');
+    const response = await fetch('https://json-server-1-m5tg.onrender.com/usuarios');
     const users = await response.json();
     const user = users.find((u) => u.email === email);
 
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       // Consultar al API para obtener los datos actualizados del usuario
-      const response = await fetch(`http://localhost:3000/usuarios/${user.id}`);
+      const response = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`);
       if (!response.ok) {
         throw new Error("Error al obtener los datos del usuario.");
       }
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Consultar al API para obtener los datos actualizados del usuario
-        const response = await fetch(`http://localhost:3000/usuarios/${user.id}`);
+        const response = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`);
         if (!response.ok) {
           throw new Error("Error al obtener los datos del usuario.");
         }
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
         usuarioActualizado.fechaReservaUsuario.splice(index, 1);
 
         // Enviar los datos actualizados al API
-        const updateResponse = await fetch(`http://localhost:3000/usuarios/${user.id}`, {
+        const updateResponse = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -284,7 +284,7 @@ const mensajes = document.getElementById("mensajes");
 const postData = async (nuevoMensaje) => {
     
   try{
-      const response = await fetch ("http://localhost:3000/mensajes", {
+      const response = await fetch ("https://json-server-1-m5tg.onrender.com/mensajes", {
           method: "POST",
           headers:{"Content-Type": "application/json"},
           body: JSON.stringify(nuevoMensaje)

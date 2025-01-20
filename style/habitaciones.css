@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #C0C0C0;
+    font-family: 'Palatino', 'Palatino Linotype', 'Times New Roman', serif;
+}
+
+h1,h2,h3 {
+    font-family: 'Georgia', serif;
+}
+
+
+.text-gold {
+    color: #CBB28C;
+}
+
+.title {
+    text-align: right;
+    text-shadow: 0 4px 10px rgba(226, 153, 43, 0.25);
+    
+}
+
+
+ /* Sombreado de los botones y enlaces */
+.login-btn:hover,.menu-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente blanco para efecto de hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+/* Estilo adicional para los enlaces del menú desplegable */
+.menu-list li a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff; /* Color del texto */
+  transition: background-color 0.3s, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.menu-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Sombreado al pasar el ratón */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Transición para los botones de login */
+.login-btn {
+  transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.botonReserva{
+  height: 10vh  ;
+}
+
+.botonReserva button {
+    font-size: 1.5rem;
+    width: 15vh;
+    border-radius: 1.5vw;
+    background-color: #b49a6f;
+    color: white;
+    /* Color del texto */
+    transition: background-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.botonReserva button:hover {
+    background-color: #CBB28C;
+    color: black;
+    /* Un tono más oscuro del color original */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa */
+    transform: translateY(-3px);
+    /* Eleva ligeramente el botón */
+}
+  
+
+
+#bodyPage{
+    position: relative;
+    margin-top: 12vh ;
+    border: 2px solid black;
+    height: 100vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top:5vh;
+}
+
+
+
+#modalLogin::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalLogin{
+    border-radius: 2vw;
+    padding: 2vw;
+}
+
+/* Botón flotante */
+#reservas-boton {
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Modal de reservas */
+  #reservas-modal {
+    z-index: 1001;
+  }
+  

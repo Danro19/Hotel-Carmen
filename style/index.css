@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #C0C0C0;
+    font-family: 'Palatino', 'Palatino Linotype', 'Times New Roman', serif;
+}
+
+h1,h2,h3 {
+    font-family: 'Georgia', serif;
+}
+
+
+.text-gold {
+    color: #CBB28C;
+}
+
+.title {
+    text-align: right;
+    text-shadow: 0 4px 10px rgba(226, 153, 43, 0.25);
+    
+}
+
+/* Contenedor principal del carrusel */
+.carousel-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+/* Estilo de cada ítem (imagen) del carrusel */
+.carousel-item {
+    flex: 0 0 100%;
+    /* Cada ítem ocupa el 100% del ancho del contenedor */
+    transition: transform 0.5s ease-in-out;
+    height: 400px;
+    /* Establecemos una altura fija para las imágenes */
+}
+
+/* Imágenes del carrusel */
+.carousel-item img {
+    width: 100%;
+    /* Las imágenes ocupan el 100% del contenedor */
+    height: 100%;
+    /* Las imágenes se adaptan a la altura del contenedor */
+    object-fit: cover;
+
+    /* Mantiene las proporciones de la imagen sin deformarla */
+    position: relative;
+}
+
+/* Botones de navegación (izquierda y derecha) */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Centra verticalmente los botones */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro semi-transparente */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-nav:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Resalta el fondo cuando se pasa el ratón */
+}
+
+/* Botón de navegación izquierdo */
+.carousel-nav.left {
+    left: 1rem;
+    top: 36.7vh;
+}
+
+/* Botón de navegación derecho */
+.carousel-nav.right {
+    right: 1rem;
+    top: 36.7vh;
+}
+
+/* Contenedor de las imágenes */
+.conteinerUno {
+    margin-top: 8vw;
+    /* Ajuste para mejorar la separacion superior */
+}
+
+.introduccion{
+    margin-top: 4vh;
+}
+
+.dos, .tres{
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.dos{
+    position: relative;
+    top:100px
+}
+
+
+.uno, .dos, .Dos img{
+    width: 80vw;
+    height: 30vh;
+    border-radius: 2vw;
+    object-fit: cover
+}
+
+.carousel-nav.leftUno {
+    left: 0.5rem;
+    top: 15vh;
+}
+
+.carousel-nav.rightUno {
+    right: 0.5rem;
+    top: 15vh;
+}
+
+img{
+    border-radius: 2vw;
+}
+ /* Sombreado de los botones y enlaces */
+.login-btn:hover,.menu-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente blanco para efecto de hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+/* Estilo adicional para los enlaces del menú desplegable */
+.menu-list li a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff; /* Color del texto */
+  transition: background-color 0.3s, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.menu-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Sombreado al pasar el ratón */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Transición para los botones de login */
+.login-btn {
+  transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.botonReserva{
+  height: 10vh  ;
+}
+
+.botonReserva button {
+    font-size: 1.5rem;
+    width: 15vh;
+    border-radius: 1.5vw;
+    background-color: #b49a6f;
+    color: white;
+    /* Color del texto */
+    transition: background-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.botonReserva button:hover {
+    background-color: #CBB28C;
+    color: black;
+    /* Un tono más oscuro del color original */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa */
+    transform: translateY(-3px);
+    /* Eleva ligeramente el botón */
+}
+  
+.aventura img{
+    width: 80vw;
+    height: 20vw;
+    margin-bottom: 5vh;
+}
+
+/* Estilos adicionales para el modal */
+#login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#login-modal .modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    max-width: 90%;
+}
+
+#rightDos{
+    top:  8vh;
+}
+#leftDos{
+    top: 8vh;
+}
+.introduccion p{
+    padding: 10vh;
+    
+}
+
+#bodyPage{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+}
+
+.comida{
+    margin-bottom: 100px;
+}
+
+.imgFinal img{
+    object-fit: cover;
+    height: 100%;
+}
+
+#minCarlBody{
+    position: relative;
+    bottom: 90px;
+}
+
+#modalLogin::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalLogin{
+    border-radius: 2vw;
+    padding: 2vw;
+}

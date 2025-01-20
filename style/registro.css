@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C0C0C0;
+    font-family: 'Palatino', 'Palatino Linotype', 'Times New Roman', serif;
+}
+
+h1,h2,h3 {
+    font-family: 'Georgia', serif;
+}
+.text-gold {
+    color: #CBB28C;
+}
+.title {
+    text-align: right;
+    text-shadow: 0 4px 10px rgba(226, 153, 43, 0.25);
+
+}
+
+.bg-white{
+    max-height: 200px;
+    overflow: auto;
+}
+

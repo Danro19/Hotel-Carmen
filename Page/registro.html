@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel El Rincón de Carmen</title>
+    <link rel="stylesheet" href="/style/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+
+<header
+      class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50"
+    >
+    <div class="hidden md:block">
+    <h1 class="text-1xl font-semibold">Bienvenido al Registro</h1>
+    <h3>Una experiencia exclusiva</h3>
+      </div>
+      <!-- Menú de navegación (☰) -->
+      <div class="mobile-menu md:hidden relative">
+        <button
+          id="menu-toggle"
+          class="text-gray-200 focus:outline-none text-2xl"
+        >
+          ☰
+        </button>
+        <div
+          id="menu-content"
+          class="hidden absolute top-12 left-0 flex flex-col gap-4 bg-teal-800 p-4 rounded-md shadow-lg"
+        >
+          <ul class="menu-list">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/Page/habitaciones">Habitaciones</a></li>
+            <li><a href="/page/contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Menú de registro y navegación para escritorio -->
+     
+      <div class="navegacion hidden md:flex">
+        <ul class="flex gap-8 font-semibold menu-list">
+          <li><a href="/index.html" class="hover:text-gray-100">Inicio</a></li>
+          <li>
+            <a href="habitaciones.html" class="hover:text-gray-100"
+              >Habitaciones</a
+            >
+          </li>
+          <li>
+            <a href="contacto.html" class="hover:text-gray-100"
+              >Contáctanos</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Título y logo -->
+      <div class="flex items-center">
+        <div class="title flex">
+          <h1 class="text-gold font-bold text-lg">
+            Hotel El Rincón de <br />Carmen
+          </h1>
+          <img
+            src="/img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.svg"
+            alt="Logo"
+            class="w-20 h-18"
+          />
+        </div>
+      </div>
+</header>
+
+<!-- Formulario de Registro -->
+<div class="min-h-screen bg-gray-100 flex flex-col justify-between">
+
+  <!-- Contenido del formulario -->
+  <main class="flex-grow flex justify-center items-center bg-gray-50 pt-32">
+    
+    <div class="bg-white p-10 rounded-xl shadow-xl w-full max-w-lg">
+
+      <h2 class="text-3xl font-semibold text-teal-900 mb-6 text-center">Crea tu cuenta</h2>
+
+      <form id="formu" method="POST">
+
+        <!-- Nombre -->
+
+        <div class="mb-6">
+
+          <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+
+          <input id="name" type="text" name="name" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 placeholder:text-gray-400" placeholder="Ej. Juan Pérez" required>
+        </div>
+
+        <!-- Correo electrónico -->
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+
+          <input id="email" type="email" name="email" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 placeholder:text-gray-400" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="mb-6">
+
+          <label for="phone" class="block text-sm font-medium text-gray-700">Número de teléfono</label>
+
+          <input id="phone" type="tel" name="phone" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 placeholder:text-gray-400" placeholder="Ej. +1 (234) 567-8901" required>
+        </div>
+
+        <!--Fecha de Nacimiento-->
+        <div class="mb-6">
+
+        <label for="fechaNacimiento" class="block text-sm font-medium text-gray-700">Fecha de nacimiento</label>
+
+        <input 
+        id="fechaNacimiento" type="date" name="fechaNacimiento" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" required max="" >
+        </div>
+
+        <!-- Contraseña -->
+        <div class="mb-6">
+
+          <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+
+          <input id="password" type="password" name="password" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" required>
+        </div>
+
+        <!-- Confirmar Contraseña -->
+        <div class="mb-6">
+
+          <label for="confirm_password" class="block text-sm font-medium text-gray-700">Confirmar Contraseña</label>
+
+          <input id="confirm_password" type="password" name="confirm_password" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" required>
+        </div>
+
+         <!-- Aceptar Términos y Condiciones -->
+        <div class="mb-6 flex items-center">
+
+            <input type="checkbox" id="accept-terms" class="mr-2">
+
+            <label for="accept-terms" class="text-sm text-gray-700">Acepto los <a href="#" id="terms-link" class="text-teal-600 hover:text-teal-800">términos y condiciones</a><label>
+
+        </div>
+
+        <!-- Botón de envío -->
+        <div class="mb-6">
+            
+          <button type="submit" class="w-full bg-teal-900 text-white py-3 px-6 rounded-lg shadow-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
+
+            Crear cuenta
+
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <div id="terms-modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+      <div class="bg-white p-8 rounded-lg shadow-lg w-3/4 max-w-6xl max-h-96 overflow-y-auto">
+        <h3 class="text-xl font-semibold text-teal-900 mb-4">Términos y Condiciones del Hotel</h3>
+        <p class="mb-4">Bienvenido al Hotel El Rincón de Carmen, un hotel de lujo dedicado a brindar una experiencia exclusiva e inigualable para nuestros huéspedes. A continuación se detallan los términos y condiciones para el uso de nuestros servicios:</p>
+        <ul class="list-inside mb-6">
+          <li>1. **Reserva de habitaciones**: Las reservas deben ser realizadas con al menos 48 horas de anticipación.</li>
+          <li>2. **Política de cancelación**: Las cancelaciones deben realizarse con un mínimo de 24 horas de antelación. Después de ese tiempo, se cobrará un 50% del costo total.</li>
+          <li>3. **Check-in/check-out**: La hora de <strong>Check-in</strong> de las habitaciones será a las 14:00 del día. Si el usuario no hace efectiva la reserva dos horas después de que inicie el check in (16:00) la habitación
+          quedará disponible para que otra persona la pueda tomar. El check-out debe realizarse antes de las 12:00 horas.</li>
+          <li>4. **Conducta del huésped**: Los huéspedes deben comportarse de manera respetuosa y cumplir con todas las normativas del hotel.</li>
+          <li>5. **Responsabilidad**: El hotel no se hace responsable de objetos personales perdidos o dañados durante la estancia.</li>
+        </ul>
+        <button id="close-modal" class="bg-teal-900 text-white px-6 py-3 rounded-lg hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500">Cerrar</button>
+      </div>
+    </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-teal-900 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-center items-center">
+        <!-- Información de la empresa -->
+        <div class="mt-6 md:mt-0 text-center md:text-left">
+          <a href="/page/privacidad.html" class="text-lg hover:text-gray-300">Política de privacidad</a>
+          <p>&copy; 2025 Hotel El Rincón de Carmen. Todos los derechos reservados.</p>
+          <p>Desarrollado por Resolutio Developers</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+
+
+  </body>
+  <script src="/scripts/registro.js"></script>
+</html>

@@ -64,7 +64,7 @@ document.getElementById('register-desktop').addEventListener('click', () => {
 // Función de login
 const login = async (email, password, modal) => {
   try {
-    const response = await fetch('https://json-server-1-m5tg.onrender.com/usuarios');
+    const response = await fetch('http://localhost:3000/usuarios');
     const users = await response.json();
     const user = users.find((u) => u.email === email);
 
@@ -157,7 +157,7 @@ window.addEventListener("load", () => {
 
 let tarjetaCuartos = document.getElementById("tarjetaCuartos");
 
-fetch('https://json-server-1-m5tg.onrender.com/habitaciones')
+fetch('http://localhost:3000/habitaciones')
   .then(response => {
     if (!response.ok) {
       throw new Error('No se pudo obtener la respuesta de la API');
@@ -247,7 +247,7 @@ function crearModal(habitacion) {
   
     // Realizar la solicitud PATCH a la API para actualizar la habitación
     try {
-      const response = await fetch(`https://json-server-1-m5tg.onrender.com/habitaciones/${idHabitacion}`, {
+      const response = await fetch(`http://localhost:3000/habitaciones/${idHabitacion}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -267,7 +267,7 @@ function crearModal(habitacion) {
       console.log(habitacionActualizada);
   
       // Actualizar la información del usuario con la reserva
-      const userUpdateResponse = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`, {
+      const userUpdateResponse = await fetch(`http://localhost:3000/usuarios/${user.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -352,7 +352,7 @@ function crearModal(habitacion) {
     }
     
     // Cargar habitaciones y mostrarlas sin necesidad de aplicar filtros
-    fetch('https://json-server-1-m5tg.onrender.com/habitaciones')
+    fetch('http://localhost:3000/habitaciones')
       .then(response => {
         if (!response.ok) {
           throw new Error('No se pudo obtener la respuesta de la API');
@@ -498,7 +498,7 @@ function crearModal(habitacion) {
         }
   
         // Consultar al API para obtener los datos actualizados del usuario
-        const response = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`);
+        const response = await fetch(`http://localhost:3000/usuarios/${user.id}`);
         if (!response.ok) {
           throw new Error("Error al obtener los datos del usuario.");
         }
@@ -551,7 +551,7 @@ function crearModal(habitacion) {
           }
   
           // Consultar al API para obtener los datos actualizados del usuario
-          const response = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`);
+          const response = await fetch(`http://localhost:3000/usuarios/${user.id}`);
           if (!response.ok) {
             throw new Error("Error al obtener los datos del usuario.");
           }
@@ -563,7 +563,7 @@ function crearModal(habitacion) {
           usuarioActualizado.fechaReservaUsuario.splice(index, 1);
   
           // Enviar los datos actualizados al API
-          const updateResponse = await fetch(`https://json-server-1-m5tg.onrender.com/usuarios/${user.id}`, {
+          const updateResponse = await fetch(`http://localhost:3000/usuarios/${user.id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",

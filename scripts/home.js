@@ -167,11 +167,11 @@ document.addEventListener('click', (event) => {
 
   document.getElementById("register-movile").addEventListener("click", () => {
     // Redirigir a la página de registro
-    window.location.href = "../Page/registro.html"; // Reemplaza con la URL de la página de registro
+    window.location.href = "../Page/registro.html"; 
   });
   document.getElementById("register-desktop").addEventListener("click", () => {
     // Redirigir a la página de registro
-    window.location.href = "../Page/registro.html"; // Reemplaza con la URL de la página de registro
+    window.location.href = "../Page/registro.html"; 
   });
   
   

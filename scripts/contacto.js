@@ -55,10 +55,10 @@ document.addEventListener('click', (event) => {
 
 // Redirección al registro
 document.getElementById('register-movile').addEventListener('click', () => {
-  window.location.href = '/Page/registro.html';
+  window.location.href = '../Page/registro.html';
 });
 document.getElementById('register-desktop').addEventListener('click', () => {
-  window.location.href = '/Page/registro.html';
+  window.location.href = '../Page/registro.html';
 });
 
 // Función de login

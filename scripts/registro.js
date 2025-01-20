@@ -101,7 +101,7 @@ const postData = async (nuevoUsuario) => {
             const {email, fechaNacimiento, name, password, phone} = jsonResponse 
             console.log("Usuario guardado", jsonResponse)
             
-            window.location.href = "/index.html";
+            window.location.href = "../index.html";
         }
 
 

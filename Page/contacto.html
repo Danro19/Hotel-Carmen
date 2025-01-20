@@ -7,49 +7,29 @@
     <link rel="stylesheet" href="/style/contacto.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-   <header
-      class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50"
-    >
+  <body class="bg-white">
+    <header class="fixed b-10 left-0 w-full flex justify-between items-center py-4 px-8 bg-teal-900 text-gray-200 z-50">
       <!-- Menú de registro (SVG de usuario) -->
-      <div class="mobile-login md:hidden relative">
-        <button
-          id="login-toggle"
-          class="text-gray-200 focus:outline-none text-2xl"
-        >
+      <div id="userMovil" class="movile-login md:hidden relative">
+        <button id="login-toggle" class="text-gray-200 focus:outline-none text-2xl">
           <!-- SVG de usuario -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="black"
-            class="w-6 h-6"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-6 h-6">
             <path
-              d="M12 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM4 20c0-3.308 2.692-6 6-6h4c3.308 0 6 2.692 6 6 0 1.104-.896 2-2 2H6c-1.104 0-2-.896-2-2zm2 0h12c0-2.206-1.794-4-4-4h-4c-2.206 0-4 1.794-4 4z"
-            />
+              d="M12 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM4 20c0-3.308 2.692-6 6-6h4c3.308 0 6 2.692 6 6 0 1.104-.896 2-2 2H6c-1.104 0-2-.896-2-2zm2 0h12c0-2.206-1.794-4-4-4h-4c-2.206 0-4 1.794-4 4z" />
           </svg>
         </button>
-        <div
-          id="login-content"
-          class="hidden absolute top-12 left-0 flex flex-col gap-2 bg-teal-800 p-4 rounded-md shadow-lg"
-        >
-          <button class="login-btn">Iniciar Sesión</button>
-          <button class="login-btn">Registrarse</button>
+        <div id="login-content"
+          class="hidden absolute top-12 left-0 flex flex-col gap-2 bg-teal-800 p-4 rounded-md shadow-lg">
+          <button id="open-login-modal" class="login-btn">Iniciar Sesión</button>
+          <button class="login-btn" id="register-movile">Registrarse</button>
         </div>
       </div>
-
+  
       <!-- Menú de navegación (☰) -->
-      <div class="mobile-menu md:hidden relative">
-        <button
-          id="menu-toggle"
-          class="text-gray-200 focus:outline-none text-2xl"
-        >
-          ☰
-        </button>
-        <div
-          id="menu-content"
-          class="hidden absolute top-12 left-0 flex flex-col gap-4 bg-teal-800 p-4 rounded-md shadow-lg"
-        >
+      <div class="movile-menu md:hidden relative">
+        <button id="menu-toggle" class="text-gray-200 focus:outline-none text-2xl">☰</button>
+        <div id="menu-content"
+          class="hidden absolute top-12 left-0 flex flex-col gap-4 bg-teal-800 p-4 rounded-md shadow-lg">
           <ul class="menu-list">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="/page/habitaciones.html">Habitaciones</a></li>
@@ -57,42 +37,230 @@
           </ul>
         </div>
       </div>
-
+  
       <!-- Menú de registro y navegación para escritorio -->
-      <div class="hidden md:flex flex-col gap-2 login">
-        <button class="login-btn">Iniciar Sesión</button>
-        <button class="login-btn">Registrarse</button>
+      <div id="userDesktop" class="hidden md:flex flex-col gap-2 login">
+        <button id="open-login-modal-desktop" class="login-btn">Iniciar Sesión</button>
+        <button class="login-btn" id="register-desktop">Registrarse</button>
       </div>
+  
       <div class="navegacion hidden md:flex">
         <ul class="flex gap-8 font-semibold menu-list">
-          <li><a href="index.html" class="hover:text-gray-100">Inicio</a></li>
-          <li>
-            <a href="/page/habitaciones.html" class="hover:text-gray-100"
-              >Habitaciones</a
-            >
-          </li>
-          <li>
-            <a href="/page/contacto.html" class="hover:text-gray-100"
-              >Contáctanos</a
-            >
-          </li>
+          <li><a href="/index.html" class="hover:text-gray-100">Inicio</a></li>
+          <li><a href="/page/habitaciones.html" class="hover:text-gray-100">Habitaciones</a></li>
+          <li><a href="/page/contacto.html" class="hover:text-gray-100">Contáctanos</a></li>
         </ul>
       </div>
-
+  
       <!-- Título y logo -->
       <div class="flex items-center">
         <div class="title flex">
           <h1 class="text-gold font-bold text-lg">
             Hotel El Rincón de <br />Carmen
           </h1>
-          <img
-            src="img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.svg"
-            alt="Logo"
-            class="w-20 h-18"
-          />
+          <img src="/img/aa56eebc1dbca0de4cd33fb3e3205df4-removebg-preview.svg" alt="Logo" class="w-20 h-18" />
         </div>
       </div>
     </header>
-    
+    <dialog id="modalLogin" class="p-6 bg-white rounded-lg shadow-lg w-full max-w-md mx-auto">
+      <form id="logMovil" class="space-y-4">
+        <label for="emailLogin" class="block text-sm font-medium text-gray-700">Correo electrónico:</label>
+        <input type="email" name="emailLogin" id="emailLogin" placeholder="Ingrese tu Email aquí" required
+          class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+  
+        <label for="password" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+        <input type="password" name="passwordLogin" id="passwordLogin" placeholder="Ingrese tu contraseña aquí" required
+          class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+  
+        <button type="submit"
+          class="w-full bg-teal-900 text-white p-2 rounded-lg text-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+          Iniciar Sesión
+        </button>
+  
+        <p class="text-center text-sm text-gray-600"><a href="/Page/registro.html"
+            class="text-indigo-600 hover:underline">Regístrate aquí.</a></p>
+      </form>
+      <div id="error-message" class="text-red-500 text-sm text-center hidden mt-3">
+        Usuario o contraseña incorrectos.
+      </div>
+    </dialog>
+  
+    <!-- Modal para escritorio -->
+    <dialog id="modalLoginDesktop" class="p-6 bg-white rounded-lg shadow-lg w-full max-w-md mx-auto">
+      <form id="LoginDesktop" class="space-y-4">
+        <label for="emailLoginDesktop" class="block text-sm font-medium text-gray-700">Correo electrónico:</label>
+        <input type="email" name="emailLoginDesktop" id="emailLoginDesktop" placeholder="Ingrese tu Email aquí" required
+          class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+  
+        <label for="password" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+        <input type="password" name="passwordLoginDesktop" id="passwordLoginDesktop"
+          placeholder="Ingrese tu contraseña aquí" required
+          class="w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+  
+        <button type="submit" id="botonDesktop"
+          class="w-full bg-teal-900 text-white p-2 rounded-lg text-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+          Iniciar Sesión
+        </button>
+  
+        <p class="text-center text-sm text-gray-600"><a href="/Page/registro.html"
+            class="text-indigo-600 hover:underline">Regístrate aquí.</a></p>
+      </form>
+      <div id="error-messageDesktop" class="text-red-500 text-sm text-center hidden mt-3">
+        Usuario o contraseña incorrectos.
+      </div>
+    </dialog>
+  
+  
+    <a
+        href="https://wa.me/+573022945334"
+        target="_blank"
+        class="fixed bottom-4 left-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="40"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 29.079097 3.1186875 32.88588 4.984375 36.208984 L 2.0371094 46.730469 A 1.0001 1.0001 0 0 0 3.2402344 47.970703 L 14.210938 45.251953 C 17.434629 46.972929 21.092591 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 21.278025 46 17.792121 45.029635 14.761719 43.333984 A 1.0001 1.0001 0 0 0 14.033203 43.236328 L 4.4257812 45.617188 L 7.0019531 36.425781 A 1.0001 1.0001 0 0 0 6.9023438 35.646484 C 5.0606869 32.523592 4 28.890107 4 25 C 4 13.390466 13.390466 4 25 4 z M 16.642578 13 C 16.001539 13 15.086045 13.23849 14.333984 14.048828 C 13.882268 14.535548 12 16.369511 12 19.59375 C 12 22.955271 14.331391 25.855848 14.613281 26.228516 L 14.615234 26.228516 L 14.615234 26.230469 C 14.588494 26.195329 14.973031 26.752191 15.486328 27.419922 C 15.999626 28.087653 16.717405 28.96464 17.619141 29.914062 C 19.422612 31.812909 21.958282 34.007419 25.105469 35.349609 C 26.554789 35.966779 27.698179 36.339417 28.564453 36.611328 C 30.169845 37.115426 31.632073 37.038799 32.730469 36.876953 C 33.55263 36.755876 34.456878 36.361114 35.351562 35.794922 C 36.246248 35.22873 37.12309 34.524722 37.509766 33.455078 C 37.786772 32.688244 37.927591 31.979598 37.978516 31.396484 C 38.003976 31.104927 38.007211 30.847602 37.988281 30.609375 C 37.969311 30.371148 37.989581 30.188664 37.767578 29.824219 C 37.302009 29.059804 36.774753 29.039853 36.224609 28.767578 C 35.918939 28.616297 35.048661 28.191329 34.175781 27.775391 C 33.303883 27.35992 32.54892 26.991953 32.083984 26.826172 C 31.790239 26.720488 31.431556 26.568352 30.914062 26.626953 C 30.396569 26.685553 29.88546 27.058933 29.587891 27.5 C 29.305837 27.918069 28.170387 29.258349 27.824219 29.652344 C 27.819619 29.649544 27.849659 29.663383 27.712891 29.595703 C 27.284761 29.383815 26.761157 29.203652 25.986328 28.794922 C 25.2115 28.386192 24.242255 27.782635 23.181641 26.847656 L 23.181641 26.845703 C 21.603029 25.455949 20.497272 23.711106 20.148438 23.125 C 20.171937 23.09704 20.145643 23.130901 20.195312 23.082031 L 20.197266 23.080078 C 20.553781 22.728924 20.869739 22.309521 21.136719 22.001953 C 21.515257 21.565866 21.68231 21.181437 21.863281 20.822266 C 22.223954 20.10644 22.02313 19.318742 21.814453 18.904297 L 21.814453 18.902344 C 21.828863 18.931014 21.701572 18.650157 21.564453 18.326172 C 21.426943 18.001263 21.251663 17.580039 21.064453 17.130859 C 20.690033 16.232501 20.272027 15.224912 20.023438 14.634766 L 20.023438 14.632812 C 19.730591 13.937684 19.334395 13.436908 18.816406 13.195312 C 18.298417 12.953717 17.840778 13.022402 17.822266 13.021484 L 17.820312 13.021484 C 17.450668 13.004432 17.045038 13 16.642578 13 z M 16.642578 15 C 17.028118 15 17.408214 15.004701 17.726562 15.019531 C 18.054056 15.035851 18.033687 15.037192 17.970703 15.007812 C 17.906713 14.977972 17.993533 14.968282 18.179688 15.410156 C 18.423098 15.98801 18.84317 16.999249 19.21875 17.900391 C 19.40654 18.350961 19.582292 18.773816 19.722656 19.105469 C 19.863021 19.437122 19.939077 19.622295 20.027344 19.798828 L 20.027344 19.800781 L 20.029297 19.802734 C 20.115837 19.973483 20.108185 19.864164 20.078125 19.923828 C 19.867096 20.342656 19.838461 20.445493 19.625 20.691406 C 19.29998 21.065838 18.968453 21.483404 18.792969 21.65625 C 18.639439 21.80707 18.36242 22.042032 18.189453 22.501953 C 18.016221 22.962578 18.097073 23.59457 18.375 24.066406 C 18.745032 24.6946 19.964406 26.679307 21.859375 28.347656 C 23.05276 29.399678 24.164563 30.095933 25.052734 30.564453 C 25.940906 31.032973 26.664301 31.306607 26.826172 31.386719 C 27.210549 31.576953 27.630655 31.72467 28.119141 31.666016 C 28.607627 31.607366 29.02878 31.310979 29.296875 31.007812 L 29.298828 31.005859 C 29.655629 30.601347 30.715848 29.390728 31.224609 28.644531 C 31.246169 28.652131 31.239109 28.646231 31.408203 28.707031 L 31.408203 28.708984 L 31.410156 28.708984 C 31.487356 28.736474 32.454286 29.169267 33.316406 29.580078 C 34.178526 29.990889 35.053561 30.417875 35.337891 30.558594 C 35.748225 30.761674 35.942113 30.893881 35.992188 30.894531 C 35.995572 30.982516 35.998992 31.07786 35.986328 31.222656 C 35.951258 31.624292 35.8439 32.180225 35.628906 32.775391 C 35.523582 33.066746 34.975018 33.667661 34.283203 34.105469 C 33.591388 34.543277 32.749338 34.852514 32.4375 34.898438 C 31.499896 35.036591 30.386672 35.087027 29.164062 34.703125 C 28.316336 34.437036 27.259305 34.092596 25.890625 33.509766 C 23.114812 32.325956 20.755591 30.311513 19.070312 28.537109 C 18.227674 27.649908 17.552562 26.824019 17.072266 26.199219 C 16.592866 25.575584 16.383528 25.251054 16.208984 25.021484 L 16.207031 25.019531 C 15.897202 24.609805 14 21.970851 14 19.59375 C 14 17.077989 15.168497 16.091436 15.800781 15.410156 C 16.132721 15.052495 16.495617 15 16.642578 15 z"
+          ></path>
+        </svg>
+      </a>
+      <!-- Botón flotante -->
+  <button id="reservas-boton" class="fixed bottom-5 right-5 bg-teal-600 p-3 rounded-full shadow-lg">
+    <!-- Ícono SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-6 h-6">
+      <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+    </svg>
+  </button>
+  
+  <!-- Modal de reservas -->
+  <div id="reservas-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-5 rounded-md w-80">
+      <h2 class="text-lg font-bold mb-4">Tus Reservas</h2>
+      <ul id="reservas-lista" class="space-y-2"></ul>
+      <button id="cerrar-modal" class="mt-4 w-full bg-teal-900 text-white py-2 rounded-md">Cerrar</button>
+    </div>
+  </div>
+  
+  <section class="py-8 bg-gray-200 relative pt-32">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Ubicación en el Mapa</h2>
+      <div class="w-full h-96  rounded-lg flex justify-center radius-2" id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62829.69860126641!2d-75.79414643739953!3d10.19233417018588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62503d70d8785%3A0x2cc8cf35515f73e4!2sIslas%20rosario!5e0!3m2!1ses-419!2sco!4v1737339048014!5m2!1ses-419!2sco" width="100%" height="388" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </div>
+  </section>
+  <section class="bg-teal-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">¿Por qué deberías visitarnos?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-teal-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Ubicación Inigualable</h3>
+          <p>
+            Nuestro hotel está situado en la paradisíaca Isla Rosario, cerca de Cartagena, rodeado de playas vírgenes y aguas cristalinas.
+          </p>
+        </div>
+        <div class="bg-teal-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Confort y Estilo Exclusivo</h3>
+          <p>
+            Combinamos el confort moderno con la belleza natural de la isla, ofreciendo habitaciones con vistas espectaculares y servicios de lujo.
+          </p>
+        </div>
+        <div class="bg-teal-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Escapatoria del Estrés Urbano</h3>
+          <p>
+            Desconecta del ajetreo de la ciudad y disfruta de un ambiente natural, con actividades al aire libre y relax en la playa.
+          </p>
+        </div>
+        <div class="bg-teal-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Experiencias Personalizadas</h3>
+          <p>
+            Ofrecemos actividades como paseos en bote, cenas privadas frente al mar, y muchas experiencias que se adaptan a tus gustos.
+          </p>
+        </div>
+        <div class="bg-teal-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Atención al Cliente de Primera</h3>
+          <p>
+            Nuestro equipo está comprometido en hacer tu estancia perfecta, garantizando que cada detalle esté cubierto para tu comodidad.
+          </p>
+        </div>
+        <div class="bg-teal-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Conexión con la Naturaleza</h3>
+          <p>
+            Disfruta de actividades al aire libre como snorkeling, senderismo, y exploración de la fauna marina en un entorno natural único.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="py-8">
+    <div class="container mx-auto px-4">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Información de Contacto -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold mb-4">Información de Contacto</h2>
+          <p class="text-gray-700 mb-4">Hotel El Rincón de Carmen</p>
+          <p class="text-gray-700 mb-4">Isla Rosario, Cartagena</p>
+          <p class="text-gray-700 mb-4"><strong>Teléfono:</strong> +57 123 456 7890</p>
+          <p class="text-gray-700 mb-4"><strong>Email:</strong> contacto@rincondcarmen.com</p>
+          
+          <h3 class="text-xl font-semibold mt-6 mb-2">Cómo llegar</h3>
+          <p class="text-gray-700">Para llegar al Hotel El Rincón de Carmen, se debe tomar un bote desde el puerto de Cartagena hacia la Isla Rosario. El trayecto tiene una duración aproximada de 45 minutos y es recomendable tomar el servicio de transporte en el puerto, que opera de manera constante durante el día. El hotel se encuentra ubicado a solo unos minutos del muelle de la isla.</p>
+          
+        </div>
+        <!-- Formulario de contacto -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold mb-4">Formulario de Contacto</h2>
+          <form id="formu">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700">Nombre</label>
+              <input type="text" id="nombre" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600" required>
+            </div>
+            
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700">Correo Electrónico</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600" required>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700">Mensaje</label>
+              <textarea id="message" name="mensaje" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-teal-600 text-white py-2 px-4 rounded-lg hover:bg-teal-700 focus:outline-none">Enviar Mensaje</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  
+  
+      <footer class="bg-teal-900 text-white py-8">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row justify-center items-center">
+            <!-- Información de la empresa -->
+            <div class="mt-6 md:mt-0 text-center md:text-left">
+              <a href="/page/privacidad.html" class="text-lg hover:text-gray-300"
+                >Política de privacidad</a
+              >
+              <p>
+                &copy; 2025 Hotel El Rincón de Carmen. Todos los derechos
+                reservados.
+              </p>
+              <p>Desarrollado por Resolutio Developers</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="/scripts/contacto.js"></script>
   </body>
+  
 </html>

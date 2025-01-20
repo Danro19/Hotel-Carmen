@@ -18,8 +18,8 @@
       "precio": 300,
       "fechaReserva": [
         [
-          "2025-01-21",
-          "2025-01-22"
+          "2025-01-23",
+          "2025-01-25"
         ]
       ]
     },
@@ -1172,8 +1172,15 @@
       "password": "123456",
       "confirm_password": "123456",
       "id": 1,
-      "reservas": [],
-      "fechaReservaUsuario": []
+      "reservas": [
+        "201"
+      ],
+      "fechaReservaUsuario": [
+        [
+          "2025-01-23",
+          "2025-01-25"
+        ]
+      ]
     },
     {
       "name": "Daniel Rodriguez",
@@ -1210,9 +1217,23 @@
       "password": "123456",
       "confirm_password": "123456",
       "id": 5,
-      "reservas": [],
-      "fechaReservaUsuario": []
+      "reservas": [
+        "201"
+      ],
+      "fechaReservaUsuario": [
+        [
+          "2025-01-20",
+          "2025-01-22"
+        ]
+      ]
     }
   ],
-  "reservas": []
+  "mensajes": [
+    {
+      "name": "pepito perez",
+      "email": "fabiano@gmail.com",
+      "mensaje": "dsadasda",
+      "id": 1
+    }
+  ]
 }

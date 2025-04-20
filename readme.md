@@ -25,15 +25,24 @@ Render (JSON Server)	Hosting de la API REST.
 
 ## 📂 Estructura del Proyecto
 plaintext
-HOTEL-CARMEN/
-├── Page/                  # Páginas principales
+HOTEL-CARMEN
+
+├── Page                  # Páginas principales
+
 │   ├── contacto.html
+
 │   ├── habitaciones.html   # Listado de habitaciones
+
 │   └── registro.html       # Formulario de registro
-├── scripts/               # Lógica JavaScript
+
+├── scripts               # Lógica JavaScript
+
 │   ├── habitaciones.js     # Consumo API y reservas
+
 │   └── registro.js         # Registro de usuarios
-└── style/                 # Estilos por página
+
+└── style                # Estilos por página
+
 
 
 ## 🔌 Integración con la API
